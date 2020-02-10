@@ -7,8 +7,11 @@
     <title>To Do</title>
 </head>
 <body>
-{% for task in tasks %}
-
-{% endfor %}
+            {% for task in tasks %}
+                {{task.category_name}}
+                {{task.task_name}}
+                {{task.task_description}}
+                {{task.products}}
+            {% endfor %}
 </body>
 </html>
