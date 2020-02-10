@@ -5,15 +5,14 @@ from bson.objectid import ObjectId
 
 
 app = Flask(__name__)
-
-app.config["MONGODB_URI"] = os.getenv("MONGO_URI")
-app.config["DBS_NAME"] = "HinchingJournal"
+app.config["MONGO_DBNAME"] = 'HinchingJournal'
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 
 
 @app.route('/')
-@app.route('/get_tasks')
-def get_tasks():
+@app.route('/todo')
+def todo():
     return render_template("todo.html", tasks=mongo.db.tasks.find())
 
 
