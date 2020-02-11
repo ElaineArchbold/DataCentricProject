@@ -15,7 +15,26 @@ mongo = PyMongo(app)
 def todo():
     return render_template("todo.html", tasks=mongo.db.tasks.find())
 
+@app.route('/addtodo')
+def addtodo():
+    return render_template('addtodo.html')
 
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+
+@app.route('/tips')
+def tips():
+    return render_template('tips.html')
+
+
+@app.route('/inspiration')
+def inspiration():
+    return render_template('inspiration.html')
+
+    
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

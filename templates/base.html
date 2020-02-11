@@ -7,28 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/>
 
    
     <title>Document</title>
 </head>
 <body>
- <nav>
+  <nav>
     <div class="nav-wrapper">
-      <img src="images/logo.png">
+      <a href="#!" class="brand-logo"><img src="{{url_for('static', filename='images/logo.png')}}" alt="logo" width="40%">Hinching Journal</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="todo.html"><i class="large material-icons">queue</i></a></li>
-        <li><a href="tips.html"><i class="large material-icons">lightbulb_outline</i></a></li>
-        <li><a href="inspiration.html"><i class="large material-icons">color_lens</i></a></li>
-       
+        <li><a href="{{url_for('todo')}}"><i class="material-icons">add_to_photos</i>To-Do</a></li>
+        <li><a href="{{url_for('tips')}}"><i class="material-icons">lightbulb</i>Tips</i></a></li>
+        <li><a href="{{url_for('inspiration')}}"><i class="material-icons">color_lens</i>Inspiration</i></a></li>
+      
       </ul>
     </div>
   </nav>
-   <img src="../images/logo.png">
-<h1>Outside!</h1>
+   
 
     {% block content %}
     {% endblock %}
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+    $('.sidenav').sidenav();
+  });
+        });
+    </script>
+   
 </body>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 </html>
