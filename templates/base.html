@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/>
-
-   
-    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/><meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+   <title>Hinching Journal</title>
 </head>
 <body>
+
   <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"><img src="{{url_for('static', filename='images/logo.png')}}" alt="logo" width="40%">Hinching Journal</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="{{url_for('todo')}}"><i class="material-icons">add_to_photos</i>To-Do</a></li>
-        <li><a href="{{url_for('tips')}}"><i class="material-icons">lightbulb</i>Tips</i></a></li>
-        <li><a href="{{url_for('inspiration')}}"><i class="material-icons">color_lens</i>Inspiration</i></a></li>
-      
-      </ul>
-    </div>
-  </nav>
+
    
+   <ul id="dropdown1" class="dropdown-content">
+   <li><a href="{{url_for('todo')}}" style="color: #303030">To-Do List</a></li>
+  <li><a href="{{url_for('addtodo')}}" style="color: #303030">Add to List</a></li>
+ 
+</ul>
+
+  <div class="nav-wrapper">
+  <a href="{{url_for('home')}}" class="brand-logo"><img src="{{url_for('static', filename='images/logo.png')}}" alt="logo" width="40%"></a>
+    <ul class="right hide-on-med-and-down">
+        <!-- Dropdown Trigger -->
+       <li><a class="dropdown-trigger" href="{{url_for('todo')}}" data-target="dropdown1">To Do<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="{{url_for('tips')}}"><i class="material-icons">lightbulb</i>Tips</a></li>
+      <li><a href="{{url_for('inspiration')}}"><i class="material-icons">color_lens</i>Inspiration</a></li>
+  
+     
+    </ul>
+  </div>
+</nav>
+   
+  
 
     {% block content %}
     {% endblock %}
-    
+    <footer class="container-fluid footer-details">
+       Footer
+    </footer>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.collapsible').collapsible();
              $('select').formSelect();
+             $(".dropdown-trigger").dropdown();
 
   });
   

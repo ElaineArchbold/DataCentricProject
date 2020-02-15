@@ -1,15 +1,32 @@
-{% extends 'base.html' %}   
-{% block content %}
-        
-<h1>Tasks</h1>
-  <ul class="collapsible" data-collapsible="accordian">
-    {% for task in tasks %}
-    <li>
-      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i><strong>{{task.task_name}}</strong></div>
-      <div class="collapsible-body"><span>{{task.task_description}} - {{task.products}}</span></div>
-    </li>
-   
-    {% endfor %}
-  </ul>
-        
+<!DOCTYPE html>
+{% extends 'base.html'%} {% block content %}
+
+<h3 class="headers">To Do</h3>
+
+<div class="container">
+<div class="row">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for task in tasks %}
+        <li>
+            <div class="collapsible-header">
+                <div class="col s3">
+                    <i class="material-icons">expand_more</i>
+                    <a class="waves-effect waves-light btn btn_small" style="background-color:#c9c7c7">Done</a>
+                    <a href="{{url_for('edittodo', task_id=task._id)}}" class="waves-effect waves-light btn btn_small edit_button" style="background-color: #e8b3b3">Edit</a>
+                    
+                </div>
+                <div class="task_header col s9">
+                    <strong>{{task.task_name}}</strong>
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                  <h6>Products:</h6><strong>{{task.products}}</strong> <h6>How To:</h6> {{task.how_to}}
+            </span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</div>
 {% endblock %}

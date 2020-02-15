@@ -1,510 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One:100,200,300,400,500,600,700|Red+Hat+Display:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Stalemate&display=swap');
 
+/*-----------------------------------------------------------------BODY*/
+body {
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
+/*-----------------------------------------------------------------HEADERS*/
+
+.headers {
+    font-size: 2.92rem;
+    line-height: 110%;
+    margin: 1.9466666667rem 0 1.168rem 0;
+    margin-left: 3em;
+}
 /*-----------------------------------------------------------------NAVBAR*/
-
-.navbar {
-    margin-bottom: 0;
-    width: 100%;
-    border: 0;
-    position: fixed;
-    z-index: 9999;
+nav ul a {
+    font-family: 'Quicksand', sans-serif;
 }
 
-.nav-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+nav ul .dropdown-content li a  {
+    font-size: 15px; 
+    color: #c9c7c7 !important;
+    display: block;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    background-color: #c9c7c7;
+    font-family: 'Stalemate', cursive;
+    font-size:12px;
+
+}
+
+.btn .btn_small {
+    height:24px;
+    width:60px;
+    line-height:24px;
+    margin:5px 5px;
+    padding: 0 0.5em;
+    background-color:#c9c7c7 !important;
+}
+
+.btn .btn_small .edit_button{
+    height:24px;
+    width:60px;
+    line-height:24px;
+    margin:5px 5px;
+    padding: 0 0.5em;
+    color: #e8b3b3 !important;
+}
+
+.row .col.s9 {
+    width: 75%;
     padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.navbar-dark {
-    background-color: black!important;
+.collapsible-body {
+    display: none;
+    border-bottom: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-family: 'Quicksand', sans-serif;
 }
+.input-field.col label {
+    left: 4rem;}
 
-.navbar .navbar-toggler {
-    border: 0;
-}
-
-.nav-item {
-    font-weight: 200;
-    font-family: 'Julius Sans One', sans-serif;
-    padding: 5px;
-}
-
-.navbar-brand {
-    font-family: 'Julius Sans One', sans-serif;
-    color: #e84610!important;
-    letter-spacing: 7px;
-    text-decoration: none;
-}
-
-.navbar-expand-sm .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .5);
-    color: #111111;
-}
-
-.hvr-sweep-to-bottom:before {
-    background: rgba(255, 255, 255, 0.25);
-}
-
-.navbar-expand-sm .navbar-nav .nav-link:hover {
-    color: rgba(0, 0, 0, .5);
-    color: #e84610;
-}
-
-#navbarNavDropdown .active a {
-    color: #e84610!important;
-}
-
-.dropdown-menu {
-    background-color: transparent;
-    border: none;
-    text-align: left;
-}
-
-.dropdown-item:hover {
-    color: #e84610;
-    background-color: #fafafa;
-    transition: all 0.5s ease-in-out;
-}
-
-
-/*-----------------------------------------------------------------PARALLAX*/
-
-.jumbotron {
-    margin: 0;
-    border-radius: 0;
-}
-
-.parallaxone {
-    background-image: url("../../assets/images/BW10.jpg");
-    min-height: 1200px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.parallaxone h3 {
-    color: #111111;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: lighter;
-    padding-top: 50px;
-    margin-top: 100px;
-    text-align: center;
-    margin-bottom: 0;
-    letter-spacing: 7px;
-}
-
-.parallaxone p {
-    color: #e84610;
-    font-weight: 100;
-    letter-spacing: 7px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 0;
-}
-
-.parallaxtwo {
-    background-image: url("../../assets/images/profile.png");
-    min-height: 600px;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.parallaxtwo h2 {
-    padding: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #fafafa;
-    font-family: 'Julius Sans One', sans-serif;
-    letter-spacing: 7px;
-    text-align: center;
-}
-
-.parallaxtwo p {
-    color: #e84610;
-    font-weight: 100;
-    letter-spacing: 4px;
-    line-height: 50px;
-    text-align: center;
-    margin-top: 0;
-}
-
-.parallaxthree {
-    background-color: #BDBDBD;
-    min-height: 600px;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.parallaxthree h2 {
-    color: #111111;
-    font-family: 'Julius Sans One', sans-serif;
-    letter-spacing: 7px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-.parallaxthree p {
-    color: #e84610;
-    font-weight: 100;
-    line-height: 50px;
-    letter-spacing: 4px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.parallaxthree a {
-    text-decoration: none;
-}
-
-.parallaxfour {
-    background-image: url("../../assets/images/BW9.jpg");
-    min-height: 600px;
-    margin-bottom: 100px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.parallaxfour h2 {
-    color: #e84610;
-    font-family: 'Julius Sans One', sans-serif;
-    letter-spacing: 7px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-
-/*-----------------------------------------------------------------CAROUSEL*/
-
-.d-block {
-    max-height: 700px;
-    object-fit: contain;
-}
-
-
-/*-----------------------------------------------------------------PORTFOLIO*/
-
-.portfolio-page {
-    margin-top: 80px;
-    margin-bottom: 100px;
-    background-color: #fafafa;
-    min-height: 1900px;
-}
-
-.portfolio-images {
-    padding: 20px;
-}
-
-.portfolio-page h3 {
-    color: #e84610;
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.img-thumbnail {
-    border: 1px solid #e84610;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.photos p {
-    color: #e84610;
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-}
-
-.item {
-    padding: 4px;
-}
-
-
-/*-----------------------------------------------------------------SHOP PAGE*/
-
-.shop {
-    padding-top: 100px;
-    padding-bottom: 80px;
-    margin-bottom: 100px;
-    background-color: #fafafa;
-    max-width: 99%;
-}
-
-.shop h1 {
-    font-family: 'Julius Sans One', sans-serif;
-    color: #e84610;
-}
-
-.list-group a {
-    font-family: 'Julius Sans One', sans-serif;
-    text-decoration: none;
-    color: #111111;
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-.list-group .list-group-item:hover {
-    color: #e84610;
-}
-
-.list-group-item {
-    border: none;
-    background-color: transparent;
-}
-
-.best-sellers {
-    padding: 20px;
-    text-align: center;
-}
-
-.card {
-    border: 1px solid #e84610;
-}
-
-.card-title {
-    padding-top: 8px;
-    margin-bottom: 0;
-}
-
-.card-body {
-    padding: 0;
-    text-align: center;
-}
-
-.card-body h4 {
-    font-family: 'Julius Sans One', sans-serif;
-    color: #e84610;
-    text-align: center;
-}
-
-.card-body p {
-    font-family: 'Red Hat Display', sans-serif;
-    color: #111111;
-}
-
-.card-title a {
-    text-decoration: none;
-    color: #e84610!important;
-}
-
-.card-footer {
-    padding: 0;
-    text-align: center;
-}
-
-.shop-button i {
-    font-size: 30px;
-    color: #e84610;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    line-height: 2px;
-}
-
-.shop-button {
-    padding: 0;
-}
-
-button {
-    border: none;
-    padding: 0;
-}
-
-.shop-page-buttons {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 16px;
-    padding: 12px;
-    border: 1px solid #e84610;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #e84610;
-    text-decoration: none;
-}
-
-.shop-page-buttons:hover {
-    color: white;
-    background-color: #e84610;
-}
-
-.active-button {
-    color: white;
-    background-color: #e84610;
-}
-
-.active-button a {
-    text-decoration: none;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #e84610;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-
-/*-----------------------------------------------------------------CONTACT PAGE*/
-
-.find-me {
-    background-image: url("../../assets/images/BW11.jpg");
-    width: 100%;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin-top: 20px;
-    padding: 0;
-    height: auto;
-    margin-bottom: 100px;
-}
-
-.find-me h1 {
-    color: #e84610;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-}
-
-.find-me h3 {
-    color: #e84610;
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.find-me p {
-    color: #111111;
-    font-family: 'Red Hat Display', sans-serif;
-    text-align: center;
-    text-decoration: none;
-}
-
-.find-me-container {
-    padding-top: 50px;
-    background-color: white;
-    opacity: .9;
-    width: 100%;
-}
-
-.iframe-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.main-form {
-    padding: 40px;
-    margin-top: 100px;
-    border-radius: 5px;
-    background-color: #fafafa;
-}
-
-.main-form h1 {
-    color: #e84610;
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-    padding-bottom: 60px;
-}
-
-.main-form button[type=submit] {
-    font-family: 'Julius Sans One', sans-serif;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #e84610;
-    color: white;
-    font-size: 28px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.main-form button[type=submit]:hover {
-    color: #e84610;
-    background-color: #fafafa;
-    border: 1px solid #e84610;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.main-form .form-control {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-}
-
-.main-form .form-text {
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: left;
-    font-size: 28px;
-    color: #e84610;
-}
-
-
-/*-----------------------------------------------------------------FORM*/
-
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 60%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #fafafa;
-    padding: 20px;
-}
-
-button[type=submit] {
-    font-family: 'Julius Sans One', sans-serif;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #e84610;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type=submit]:hover {
-    color: #e84610;
-    background-color: #fafafa;
-    border: 1px solid #e84610;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.form-control {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 14px;
-    font-weight: 100;
-}
-
-.form-text {
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: left;
-    color: #e84610;
-}
-
-
-/*-----------------------------------------------------------------FOOTER*/
 
-footer {
-    background-color: #d6d5d5;
+/*----------------------------------------------------------------FOOTER*/
+    footer {
+    background-color: #c9c7c7;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -541,177 +111,4 @@ footer {
 
 .footer-details {
     padding-top: 5px;
-}
-
-
-/*-----------------------------------------------------------------MEDIA QUERIES*/
-
-@media(min-width:320px) and (max-width:767px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
-        max-width: 90%;
-    }
-}
-
-@media(min-width: 768px) and (max-width:991px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
-        max-width: 70%;
-    }
-}
-
-@media(min-width:320px) and (max-width:991px) {
-    .navbar-brand {
-        letter-spacing: 3px;
-    }
-}
-
-@media(min-width:320px) and (max-width:992px) {
-    .parallaxone {
-        background-image: url("../../assets/images/par1responsive.jpg");
-        background-attachment: scroll;
-        width: 100%;
-        height: auto;
-        z-index: 1;
-    }
-}
-
-@media(min-width:320px) and (max-width:992px) {
-    .parallaxone h3 {
-        letter-spacing: 1px;
-    }
-}
-
-@media(min-width:320px) and (max-width:992px) {
-    .parallaxone p {
-        font-size: 4vw;
-    }
-}
-
-@media(min-width:320px) and (max-width:991px) {
-    .parallaxtwo {
-        background-color: #202020;
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-}
-
-@media (min-width: 768px) {
-    .col-md-7 {
-        flex: none;
-        max-width: 80%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .col-md-7 {
-        flex: none;
-        max-width: 70%;
-    }
-}
-
-@media(min-width:320px) and (max-width:991px) {
-    .parallaxtwo p {
-        font-size: 4.5vw;
-        line-height: inherit;
-    }
-}
-
-@media(min-width:992px) {
-    .parallaxtwo p {
-        font-size: 3.5vw;
-        line-height: inherit;
-    }
-}
-
-@media(min-width:320px) and (max-width:992px) {
-    .parallaxthree {
-        min-height: inherit;
-    }
-}
-
-@media(min-width:320px) and (max-width:992px) {
-    .parallaxfour {
-        background-image: none;
-        background-color: #f2f2f2;
-        margin-bottom: 50px;
-    }
-}
-
-@media(min-width:320px) and (max-width:992px) {
-    .portfolio-page {
-        margin-top: 60px;
-        margin-bottom: 50px;
-    }
-}
-
-@media(min-width: 320px) and (max-width:1024px) {
-    .find-me-container {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-}
-
-@media(min-width:320px) and (max-width:991px) {
-    .iframe-container {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-    .social-links li a i {
-        line-height: 30px;
-        width: 30px;
-        height: 30px;
-        padding: 0px;
-        border-radius: 50%;
-        font-size: 20px;
-        line-height: 30px;
-    }
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-    .footer-details {
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-    footer {
-        line-height: 50px;
-        height: 50px;
-    }
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-    .shop-page-buttons {
-        font-size: 10px;
-        padding: 6px;
-
-    }
-}
-
-@media(min-width: 992px) {
-    .small-screen-buttons {
-        display: none;
-        border: none;
-        font-size: 10px;
-        padding: 6px;
-
-    }
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-    .shop {
-        padding-top: 80px;
-        margin-bottom: 60px;
-    }
 }

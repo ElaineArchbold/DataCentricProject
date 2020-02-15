@@ -33,6 +33,13 @@ def updatetodo():
     return redirect(url_for('todo'))
 
 
+@app.route('/edittodo/<task_id>')
+def edittodo(task_id):
+    the_task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
+    all_categories = mongo.db.categories.find()
+    return render_template('edittodo.html', task=the_task, categories=all_categories)
+
+
 @app.route('/home')
 def home():
     return render_template('home.html')
