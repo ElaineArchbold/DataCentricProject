@@ -56,14 +56,17 @@ nav .nav-wrapper {
     text-decoration: none;
 }
 
-/*-----------------------------------------------------------------TO-DO LIST*/
+/*-----------------------------------------------------------------HOME PAGE*/
 .background-container {
     background-image: url('/static/images/background.jpg');
     min-height: 1200px;
+    max-width:initial;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
 }
+
+
 /*-----------------------------------------------------------------TO-DO LIST*/
 
 .btn .btn_small {
@@ -101,6 +104,17 @@ nav .nav-wrapper {
 }
 .input-field.col label {
     left: 4rem;}
+
+
+.to-do-list-container{
+     background-image: url('/static/images/todo.jpg');
+    min-height: 1200px;
+    max-width:initial;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 
 /*----------------------------------------------------------------INSPIRATION PAGE*/
 
