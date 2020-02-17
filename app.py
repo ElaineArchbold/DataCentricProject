@@ -40,6 +40,26 @@ def edittodo(task_id):
     return render_template('edittodo.html', task=the_task, categories=all_categories)
 
 
+@app.route('/update_task/<task_id>', methods=["POST"])
+def update_task(task_id):
+    tasks = mongo.db.tasks
+    tasks.update({'_id': ObjectId(task_id)},
+                 {
+        'task_name': request.form.get('task_name'),
+        'category_name': request.form.get('category_name'),
+        'task_description': request.form.get('task_description'),
+        'products': request.form.get('products'),
+        'how_to': request.form.get('how_to'),
+    })
+    return redirect(url_for('todo'))
+
+
+@app.route('/completed/<task_id>')
+def completed(task_id):
+    mongo.db.tasks.remove({'_id': ObjectId(task_id)})
+    return redirect(url_for('todo'))
+
+
 @app.route('/home')
 def home():
     return render_template('home.html')

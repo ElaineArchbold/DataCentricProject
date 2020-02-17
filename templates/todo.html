@@ -11,12 +11,12 @@
             <div class="collapsible-header">
                 <div class="col s3">
                     <i class="material-icons">expand_more</i>
-                    <a class="waves-effect waves-light btn btn_small" style="background-color:#c9c7c7">Done</a>
+                    <a href="{{url_for('completed', task_id=task._id)}}" class="waves-effect waves-light btn btn_small" style="background-color:#c9c7c7">Done</a>
                     <a href="{{url_for('edittodo', task_id=task._id)}}" class="waves-effect waves-light btn btn_small edit_button" style="background-color: #e8b3b3">Edit</a>
                     
                 </div>
                 <div class="task_header col s9">
-                    <strong>{{task.task_name}}</strong>
+                    <strong>{{task.task_name}}</strong> <br> {{task.task_description}}
                 </div>
             </div>
             <div class="collapsible-body">
@@ -27,6 +27,12 @@
         </li>
         {% endfor %}
     </ul>
+ 
 </div>
 </div>
+<form action="{{url_for('addtodo')}}">
+   <button class="btn waves-effect waves-light" type="submit" name="action">Add to To-Do
+    <i class="material-icons right">play</i>
+  </button>
+  </form>
 {% endblock %}

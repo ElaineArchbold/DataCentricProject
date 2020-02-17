@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Stalemate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script|Quicksand&display=swap');
 
 /*-----------------------------------------------------------------BODY*/
 body {
@@ -18,22 +18,53 @@ body {
 /*-----------------------------------------------------------------NAVBAR*/
 nav ul a {
     font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 1px grey;
 }
 
-nav ul .dropdown-content li a  {
+nav ul a:hover  {
     font-size: 15px; 
-    color: #c9c7c7 !important;
+    color: #e8b3b3 !important;
     display: block;
+    background-color: #fafafa;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
 }
 
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    text-decoration: none;
+    padding-left: 10px;
+    text-shadow: 1px 1px grey }
+  
+nav .brand-logo:hover{
+     color: #e8b3b3 !important;
+         text-shadow: 1px 1px white;
+
+}
 nav .nav-wrapper {
     position: relative;
     height: 100%;
     background-color: #c9c7c7;
-    font-family: 'Stalemate', cursive;
+    font-family: 'Euphoria Script', cursive;
     font-size:12px;
-
+    padding-left:5px;
+    text-decoration: none;
 }
+
+/*-----------------------------------------------------------------TO-DO LIST*/
+.background-container {
+    background-image: url('/static/images/background.jpg');
+    min-height: 1200px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+/*-----------------------------------------------------------------TO-DO LIST*/
 
 .btn .btn_small {
     height:24px;
@@ -71,6 +102,31 @@ nav .nav-wrapper {
 .input-field.col label {
     left: 4rem;}
 
+/*----------------------------------------------------------------INSPIRATION PAGE*/
+
+
+.inspiration-page {
+    margin-bottom: 100px;
+    background-color: #fafafa;
+    min-height: 1900px;
+}
+
+.inspiration-page h2{
+   font-family: 'Euphoria Script', cursive;
+}
+.portfolio-images {
+    padding: 20px;
+}
+
+.img-thumbnail {
+    border: 1px solid #e8b3b3;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.item {
+    padding: 4px;
+}
 
 /*----------------------------------------------------------------FOOTER*/
     footer {
