@@ -14,14 +14,13 @@ body {
     line-height: 110%;
     padding-left: 50px;
     padding-top: 50px;
-    color: 
- 
 }
 /*-----------------------------------------------------------------NAVBAR*/
 nav ul a {
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     text-shadow: 1px 1px grey;
+    color: #444343
 }
 
 nav ul a:hover  {
@@ -35,13 +34,12 @@ nav ul a:hover  {
 
 nav .brand-logo {
     position: absolute;
-    color: #fff;
+    color: #444343;
     display: inline-block;
     font-size: 2.1rem;
     padding: 0;
     text-decoration: none;
-    padding-left: 10px;
-    text-shadow: 1px 1px grey }
+    padding-left: 10px;}
   
 nav .brand-logo:hover{
     color: #e8b3b3 !important;
@@ -51,7 +49,7 @@ nav .brand-logo:hover{
 nav .nav-wrapper {
     position: relative;
     height: 100%;
-    background-color: f4f2f2;
+    background-color: #aaaaaa;
     font-family: 'Euphoria Script', cursive;
     font-size:12px;
     padding-left:5px;
@@ -149,10 +147,10 @@ nav .nav-wrapper {
     border-radius:50px;
     border:1px solid #e8b3b3;
     box-shadow:2px 2px #d6d6d6;
-   
 }
 
-.pb-video-container {    margin-bottom: 100px;
+.pb-video-container {    
+    margin-bottom: 100px;
     background-color: #fafafa;
     min-height: 1200px;
     margin-top: 60px;
@@ -162,6 +160,8 @@ nav .nav-wrapper {
     min-height: 1200px;
     margin-top: 60px;
     padding-top: 10px;
+    }
+
 
 .pb-video {
         border: 1px solid #e8b3b3;
@@ -188,8 +188,13 @@ nav .nav-wrapper {
     text-align:center;
     border:none;
 }
-/*----------------------------------------------------------------INSPIRATION PAGE*/
 
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*----------------------------------------------------------------INSPIRATION PAGE*/
 
 .inspiration-page {
     margin-bottom: 100px;
@@ -212,6 +217,15 @@ nav .nav-wrapper {
 
 .item {
     padding: 4px;
+}
+
+.img-thumbnail{
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #e8b3b3;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
 }
 
 /*----------------------------------------------------------------FOOTER*/
