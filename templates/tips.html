@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}   
+{% extends 'base.html' %} 
 {% block content %}
-   <h3>Tips</h3>
+<div class="container-fluid tips-page">
+   <h3 class="headers">Tips</h3>
+   <!--SEARCH YOUTUBE MRS. HINCH VIDEOS HERE--> 
+     
+     
+    <div class="container search-bar">
+       <form class="form-control" action="https://www.youtube.com/channel/UC6FdaW8Y3m699JdYRNCixIQ/videos" method="get" target="_blank" style="background-color:#fafafa">
+       <input autocomplete="off" placeholder="search all Mrs. Hinch videos here" style="text-align:center; height:1rem" autocapitalize="none" autocorrect="off" aria-describedby="" aria-labelledby="paper-input-label-1" name="query"> 
+       <input style="border-radius:15px" type="submit" value="Search"/>
+      </form>
+    </div>
 
-   <div class="col-s6"> <iframe width="560" height="315" src="https://www.youtube.com/embed/poqWPRM7HCY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-
- <div class="col-s6"><iframe width="560" height="315" src="https://www.youtube.com/embed/XZqk-pjh0FU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+   <!--VIDEO GALLERY--> 
+   <div class="pb-video-container">
+   <div class="col-md-10 offset-md-1">
+      <h5 class="text-xs-center">Mrs. Hinch YouTube Gallery</h5>
+      <div class="row pb-row">
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/XZqk-pjh0FU" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Oraganising Cupboards </label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/Zq-0l9x88U8" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Bedroom Hinching</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/wcSXHv7VNhU" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Garage Drawers</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/pP9yExvai2A" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Dusting & Shining</label>
+         </div>
+      </div>
+      <div class="row pb-row">
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/A4RhUeVtEzc" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Hinching the Living Room</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/ooTSBxRuqLo" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Freshen Up Friday!</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/LghhdJUe7Xs" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Hinching the Bathroom</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/doYc1foCg1Y" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Q&A</label>
+         </div>
+      </div>
+      <div class="row pb-row">
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/S9RCC3Feco0" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Super Soft Laundry</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/OSTJUy0cHhA" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Mini Hinch Haul</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/OZcOQcVwpWw" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Hinching the Fridge</label>
+         </div>
+         <div class="col-md-3 pb-video">
+            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/KFhA4B2vvQA" frameborder="0" allowfullscreen></iframe>
+            <label class="form-control label-warning text-xs-center">Freshen Up Your Rug</label>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
 {% endblock %}

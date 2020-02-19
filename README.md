@@ -33,3 +33,7 @@ We continually tweak and adjust this template to help give you the best experien
 --------
 
 Happy coding!
+
+
+VIDEO GALLERY - http://www.prepbootstrap.com/bootstrap-template/video-gallery
+LIGHTBOX - from Ritchies Site

@@ -3,7 +3,7 @@
 /*-----------------------------------------------------------------BODY*/
 body {
     font-family: 'Quicksand', sans-serif;
-    
+    color: #605f5f;
 }
 
 
@@ -12,8 +12,10 @@ body {
 .headers {
     font-size: 2.92rem;
     line-height: 110%;
-    margin: 1.9466666667rem 0 1.168rem 0;
-    margin-left: 3em;
+    padding-left: 50px;
+    padding-top: 50px;
+    color: 
+ 
 }
 /*-----------------------------------------------------------------NAVBAR*/
 nav ul a {
@@ -42,14 +44,14 @@ nav .brand-logo {
     text-shadow: 1px 1px grey }
   
 nav .brand-logo:hover{
-     color: #e8b3b3 !important;
-         text-shadow: 1px 1px white;
+    color: #e8b3b3 !important;
+    text-shadow: 1px 1px white;
 
 }
 nav .nav-wrapper {
     position: relative;
     height: 100%;
-    background-color: #c9c7c7;
+    background-color: f4f2f2;
     font-family: 'Euphoria Script', cursive;
     font-size:12px;
     padding-left:5px;
@@ -107,7 +109,7 @@ nav .nav-wrapper {
 
 
 .to-do-list-container{
-     background-image: url('/static/images/todo.jpg');
+    background-image: url('/static/images/todo.png');
     min-height: 1200px;
     max-width:initial;
     background-attachment: fixed;
@@ -115,7 +117,74 @@ nav .nav-wrapper {
     background-position: 50% 50%;
 }
 
+.add-to-do-list-container{
+    background-image: url('/static/images/todo.png');
+    min-height: 1200px;
+    max-width:initial;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+}
 
+.add-to-do-form {
+    background-color:white;
+    padding:20px;
+    margin:70px;
+
+}
+/*----------------------------------------------------------------TIPS PAGE*/
+.tips-page {
+    margin-bottom: 100px;
+    background-color: #fafafa;
+    min-height: 1900px;
+}
+
+.search-bar{
+    background-color:#fafafa;
+    padding-top: 15px;
+    padding-bottom: 0;
+    max-width: 1280px;
+    height: 80px;
+    border-radius:50px;
+    border:1px solid #e8b3b3;
+    box-shadow:2px 2px #d6d6d6;
+   
+}
+
+.pb-video-container {
+    margin-bottom: 100px;
+    background-color: #fafafa;
+    min-height: 1200px;
+    margin-top:100px;
+    padding-top:50px;
+    }
+
+.pb-video {
+        border: 1px solid #e8b3b3;
+        padding: 5px;
+    }
+
+.pb-video:hover {
+        background: #e8b3b3;
+        }
+
+.pb-video-frame {
+        transition: width 2s, height 2s;
+    }
+
+.pb-video-frame:hover {
+        height: 300px;
+        }
+
+.pb-row {
+        margin-bottom: 10px;
+    }
+
+.form-control{
+    text-align:center;
+    border:none;
+}
 /*----------------------------------------------------------------INSPIRATION PAGE*/
 
 
