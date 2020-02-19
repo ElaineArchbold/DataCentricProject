@@ -13,7 +13,7 @@
                     <select id="category" name="category_name">
                   <option value="" disabled selected>Choose Category</option>
                   {% for cat in categories %}
-                      <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                      <option value="{{cat.category_name}}" requierd>{{cat.category_name}}</option>
                   {% endfor %}
                 </select>
                     <label>Task Category</label>
@@ -24,37 +24,29 @@
       <div class="row">
         <div class="input-field col s12">
         <i class="material-icons">check_box</i>
-          <input id="task_name" name="task_name" type="text" class="validate">
+          <input id="task_name" name="task_name" type="text" class="validate" required>
           <label for="task_name">Task Name</label>
-        </div>
-      </div>
-      <div class="row">
-      <i class="material-icons">subject</i>
-        <div class="input-field col s12">
-          <textarea id="task_description" name="task_description" type="textarea" class="materialize-textarea"></textarea>
-          <label for="task_description">Task Description</label>
         </div>
       </div>
         <div class="row">
         <div class="input-field col s12">
-        <i class="material-icons">import_contacts</i>
-          <input id="products" name="how_to" type="text" class="validate">
+      <i class="material-icons">shopping_basket</i>
+          <input id="products" name="how_to" type="text" class="validate" required>
           <label for="products">Products</label>
         </div>
       </div>
           <div class="row">
         <div class="input-field col s12">
         <i class="material-icons">import_contacts</i>
-          <input id="how_to" name="how_to" type="text" class="validate">
+          <input id="how_to" name="how_to" type="text" class="validate" required>
           <label for="how_to">How To</label>
         </div>
       </div>
       
-
- <button class="btn waves-effect waves-light" type="submit" name="action">Add to To-Do
-    <i class="material-icons right">play</i>
+<div class="form-row text-center">
+ <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
   </button>
-    
+    </div>
      </form>
 
   </div>

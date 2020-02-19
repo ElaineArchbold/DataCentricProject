@@ -9,16 +9,21 @@
     <ul class="collapsible" data-collapsible="accordion">
         {% for task in tasks %}
         <li>
+           
+            
             <div class="collapsible-header">
-                <div class="col s3">
-                    <i class="material-icons">expand_more</i>
-                    <a href="{{url_for('completed', task_id=task._id)}}" class="waves-effect waves-light btn btn_small" style="background-color:#c9c7c7">Done</a>
+            <i class="material-icons">expand_more</i>
+             <div class="task_header col s9">
+                    <strong>{{task.task_name}}</strong> 
+                </div>
+
+                 <div class="col s3">
                     <a href="{{url_for('edittodo', task_id=task._id)}}" class="waves-effect waves-light btn btn_small edit_button" style="background-color: #e8b3b3">Edit</a>
+                    <a href="{{url_for('completed', task_id=task._id)}}" class="waves-effect waves-light btn btn_small" style="background-color:#c9c7c7">Done</a>
+                    
                     
                 </div>
-                <div class="task_header col s9">
-                    <strong>{{task.task_name}}</strong> <br> {{task.task_description}}
-                </div>
+               
             </div>
             <div class="collapsible-body">
                 <span>
@@ -31,12 +36,12 @@
  
 </div>
 </div>
-<div class="row">
+ <div class="form-row text-center">
 <div class="col 12">
 <form action="{{url_for('addtodo')}}">
-   <button class="btn waves-effect waves-light" type="submit" name="action">Add to To-Do
-    <i class="material-icons right">play</i>
+ <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
   </button>
+    
   </form>
   </div>
   </div>

@@ -6,6 +6,14 @@ body {
     color: #605f5f;
 }
 
+.material-icons{
+    color:#e8b3b3;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:none;
+}
 
 /*-----------------------------------------------------------------HEADERS*/
 
@@ -16,17 +24,13 @@ body {
     padding-top: 50px;
 }
 /*-----------------------------------------------------------------NAVBAR*/
-nav ul a {
-    font-family: 'Quicksand', sans-serif;
+nav ul a .material-icons {
     text-decoration: none;
-    text-shadow: 1px 1px grey;
     color: #444343
 }
 
-nav ul a:hover  {
-    font-size: 15px; 
+nav ul a :hover  {
     color: #e8b3b3 !important;
-    display: block;
     background-color: #fafafa;
     transition: all 0.5s ease-in-out;
     text-decoration: none;
@@ -56,6 +60,19 @@ nav .nav-wrapper {
     text-decoration: none;
 }
 
+ .my_icon{
+    display :none;
+                  }
+
+.my_icon:hover{
+    display :visible;
+      color:#444343;
+       font-family: 'Quicksand', sans-serif;
+                  }
+
+.nav-text{
+  
+}
 /*-----------------------------------------------------------------HOME PAGE*/
 .background-container {
     background-image: url('/static/images/background.jpg');
@@ -130,6 +147,29 @@ nav .nav-wrapper {
     padding:20px;
     margin:70px;
 
+}
+
+.collapsible {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: .5rem 0 1rem 0;
+    width: 60%; }
+
+.form-row{
+    display:inherit
+}
+
+.add-button{
+    background-color:#fafafa;
+    border: 1px solid #e8b3b3;
+    color:#444343;
+}
+
+.add-button:hover{
+    background-color: #e8b3b3;
+    border: 1px solid #fafafa;
+    color:#fafafa;
 }
 /*----------------------------------------------------------------TIPS PAGE*/
 .tips-page {
