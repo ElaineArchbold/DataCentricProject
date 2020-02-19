@@ -66,13 +66,8 @@ nav .nav-wrapper {
 
 .my_icon:hover{
     display :visible;
-      color:#444343;
-       font-family: 'Quicksand', sans-serif;
-                  }
 
-.nav-text{
-  
-}
+                  }
 /*-----------------------------------------------------------------HOME PAGE*/
 .background-container {
     background-image: url('/static/images/background.jpg');
