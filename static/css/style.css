@@ -23,51 +23,52 @@ a:hover{
     padding-left: 50px;
     padding-top: 50px;
 }
+
+.tagline {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 2vw;
+    padding-left: 50px;
+}
 /*-----------------------------------------------------------------NAVBAR*/
 nav ul a .material-icons {
     text-decoration: none;
     color: #444343
 }
 
-nav ul a :hover  {
+nav .nav-item a:hover  {
     color: #e8b3b3 !important;
     background-color: #fafafa;
     transition: all 0.5s ease-in-out;
-    text-decoration: none;
+    
+}
+
+nav .nav-link a:active  {
+    color: #e8b3b3 !important;
+    background-color: #fafafa;
+    transition: all 0.5s ease-in-out;
+    
 }
 
 nav .brand-logo {
     position: absolute;
     color: #444343;
     display: inline-block;
-    font-size: 2.1rem;
-    padding: 0;
+    font-size: 3vw;
+    font-family: 'Euphoria Script', cursive;
+    padding-left:5px;
     text-decoration: none;
-    padding-left: 10px;}
+   }
   
 nav .brand-logo:hover{
     color: #e8b3b3 !important;
     text-shadow: 1px 1px white;
 
 }
-nav .nav-wrapper {
+.navbar {
     position: relative;
-    height: 100%;
-    background-color: #aaaaaa;
-    font-family: 'Euphoria Script', cursive;
-    font-size:12px;
-    padding-left:5px;
-    text-decoration: none;
+    background-color: #aaaaaa !important;
 }
 
- .my_icon{
-    display :none;
-                  }
-
-.my_icon:hover{
-    display :visible;
-
-                  }
 /*-----------------------------------------------------------------HOME PAGE*/
 .background-container {
     background-image: url('/static/images/background.jpg');
@@ -167,21 +168,25 @@ nav .nav-wrapper {
     color:#fafafa;
 }
 /*----------------------------------------------------------------TIPS PAGE*/
+
+
+
+.wrap {
+    width: 100%;
+    border: 1px solid grey;
+    float: right;
+    border-radius: 50px;
+    border-radius: 0 5px 5px 0;}
+
+.wrap button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    background-color: transparent;
+    border: none;
+}
 .tips-page {
     margin-bottom: 100px;
     background-color: #fafafa;
-    min-height: 1900px;
-}
-
-.search-bar{
-    background-color:#fafafa;
-    padding-top: 15px;
-    padding-bottom: 0;
-    max-width: 1280px;
-    height: 80px;
-    border-radius:50px;
-    border:1px solid #e8b3b3;
-    box-shadow:2px 2px #d6d6d6;
+    min-height: auto;
 }
 
 .pb-video-container {    
@@ -190,11 +195,7 @@ nav .nav-wrapper {
     min-height: 1200px;
     margin-top: 60px;
     padding-top: 10px;
-    margin-bottom: 100px;
-    background-color: #fafafa;
-    min-height: 1200px;
-    margin-top: 60px;
-    padding-top: 10px;
+  
     }
 
 

@@ -37,3 +37,5 @@ Happy coding!
 
 VIDEO GALLERY - http://www.prepbootstrap.com/bootstrap-template/video-gallery
 LIGHTBOX - from Ritchies Site
+BOOTSTEP & MATERIALIZE
+YOUTUBESEARCH BAR TO GO STRAIGHT TO HER PAGE
