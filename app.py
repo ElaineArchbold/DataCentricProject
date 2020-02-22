@@ -14,6 +14,11 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+
 @app.route('/todo')
 def todo():
     return render_template('todo.html',
@@ -37,7 +42,8 @@ def updatetodo():
 def edittodo(task_id):
     the_task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edittodo.html', task=the_task, categories=all_categories)
+    return render_template('edittodo.html',
+                           task=the_task, categories=all_categories)
 
 
 @app.route('/update_task/<task_id>', methods=["POST"])
@@ -58,11 +64,6 @@ def update_task(task_id):
 def completed(task_id):
     mongo.db.tasks.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('todo'))
-
-
-@app.route('/home')
-def home():
-    return render_template('home.html')
 
 
 @app.route('/tips')
