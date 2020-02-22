@@ -2,7 +2,71 @@
 {% extends 'base.html' %}   
 {% block content %}
      <div class="container background-container">
+ 
+    <!--SECTION ONE-->
+    <section id="about-me">
+        <div class="jumbotron parallaxone">
+            <div class="row about-me">
+                <div class="col-md-7">
+                    <h2>Discover how to transform your home</h2>
+                    <p>Hello! Mrs Hinch here! Welcome to your very own online Hinch activity journal! This little app is all about giving yourself the gift of time out: time to plan, time to dream, time to relax, time for us to have a bit of a giggle and a de-stress. We all live such busy lives and it can be hard to take a moment just to breathe, but I want this app to be all about YOU.  So, make yourself a cuppa and dive in. Plus plan your own Hinching lists ready for the week ahead! Think of it as an app shaped slice of you time. You deserve it! Love, Mrs Hinch xx</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECTION TWO-->
+    <section>
    
+         <div id="print-content">
+        <div id="printDiv" class="jumbotron parallaxtwo shopping-list">
+         <div class="container">
+            <div class="container-fluid text-center">
+                <h2>Shopping List</h2>
+            </div>
+                <div class="row">
+   <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Minky Sponge</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Bicard of Soda</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Stardrops White Vinegar</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Zoflora</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>1001 Spray</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Cif power and Shine Wipes</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Bloo Foam Aroma</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Toilet Bleach(Harpic Fresh Pine)</span></label></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Duck Fresh Toilet Disks</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Flash Bathroom with Fabreeze</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>The Pink Stuff</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Mr Sheen Multi Surface Cleaner</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Cif Stainless Steel Spray</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Stardrops Pine Disinfectant</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Viakal</span></label></div>
+     <div class="col-sm-6 col-md-4 col-lg-3 item"><label><input type="checkbox" /><span>Lenor Softener</span></label></div>
+
+</div>
+     <input type="button" value="Print Shopping List" onclick="window.print()">
+        </div>
+   
+          </div>
+    </div>
+    </section>
+    
+     <!--SECTION THREE-->
+    <section>
+        <div class="jumbotron parallaxthree">
+              <h2>Social</h2>
+    
+      <div class="row">
+      <div class="col-md-3">
+      <iframe style="border-radius:12px;" width="560" height="360" src="https://www.youtube.com/embed/XSQXA8TzJu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe style="border-radius:12px;" width="560" height="360" src="https://www.youtube.com/embed/ZnOncnOK41Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a href="{{url_for('tips')}}">View More</a>
+      </div>
+      <div class="col-md-3 offset-2">
+<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/B6bNsHYH9Ug/embed/?cr=1&amp;v=12&amp;wp=652&amp;rd=https%3A%2F%2F8080-cd0fecdb-cc66-4cb3-9d3b-3f215f5edb93.ws-eu01.gitpod.io&amp;rp=%2Fhome#%7B%22ci%22%3A0%2C%22os%22%3A360.05999999906635%2C%22ls%22%3A296.50999999830674%2C%22le%22%3A310.4349999994156%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="878" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 12px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 14px; min-width: 540px; padding: 0px;"></iframe>
+      </div>
+      </div>
+        </div>
+    </section>
      </div>
 {% endblock %}
 

@@ -3,7 +3,7 @@
 /*-----------------------------------------------------------------BODY*/
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #605f5f;
+    color: #434343;
 }
 
 .material-icons{
@@ -39,6 +39,7 @@ nav .nav-item a:hover  {
     color: #e8b3b3 !important;
     background-color: #fafafa;
     transition: all 0.5s ease-in-out;
+    font-size: 2vw;
     
 }
 
@@ -60,8 +61,7 @@ nav .brand-logo {
    }
   
 nav .brand-logo:hover{
-    color: #e8b3b3 !important;
-    text-shadow: 1px 1px white;
+    color: #fafafa !important;
 
 }
 .navbar {
@@ -70,13 +70,94 @@ nav .brand-logo:hover{
 }
 
 /*-----------------------------------------------------------------HOME PAGE*/
-.background-container {
-    background-image: url('/static/images/background.jpg');
-    min-height: 1200px;
-    max-width:initial;
+.background-container{
+    margin:0;
+    max-width: 100%;
+    padding:0;
+}
+ /*-----------------------------------------------------------------PARALLAX*/
+.jumbotron {
+    margin: 0;
+    border-radius: 0;
+}
+.parallaxone h2{
+  font-family: 'Euphoria Script', cursive;
+    font-size: 3vw;
+    padding-left: 50px;
+
+}
+.parallaxone p {
+    font-weight: 100;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5vw;
+    margin-top: 0;
+    letter-spacing: 2px;
+    line-height: 2;} 
+
+.parallaxone {
+    background-image: url('/static/images/home-background.png');
+    min-height: 600px;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.parallaxtwo {
+    min-height: 600px;
+    background-color: #eaeaea;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.parallaxtwo h2 {
+    font-family: 'Euphoria Script', cursive;
+    color: #605f5f;
+    letter-spacing: 7px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #e8b3b3;
+    border-bottom: 2px solid #e8b3b3;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.parallaxthree {
+    background-image: url('/static/images/background.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.parallaxthree h2 {
+   font-family: 'Euphoria Script', cursive;
+    color: #e8b3b3;
+    letter-spacing: 7px;
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-shadow: 2px 2px grey;
+}
+
+
+.parallaxthree a {
+    text-decoration: none;
 }
 
 
@@ -276,10 +357,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     height: 70px;
 }
 
-.footer-content {
-    color: #111111;
-    text-align: center;
-}
+
 
 .social-links li a i {
     width: 50px;
@@ -298,7 +376,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 .social-links li a i:hover {
-    color: #e84610;
+    color: #e8b3b3 ;
 }
 
 .footer-details {
