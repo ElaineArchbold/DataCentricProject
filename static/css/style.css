@@ -1,384 +1,552 @@
 @import url('https://fonts.googleapis.com/css?family=Euphoria+Script|Quicksand&display=swap');
 
 /*-----------------------------------------------------------------BODY*/
+
 body {
-    font-family: 'Quicksand', sans-serif;
-    color: #434343;
+	font-family: 'Quicksand', sans-serif;
+	color: #434343;
 }
 
-.material-icons{
-    color:#e8b3b3;
-    text-decoration:none;
+.material-icons {
+	color: #e8b3b3;
+	text-decoration: none;
 }
 
-a:hover{
-    text-decoration:none;
+a:hover {
+	text-decoration: none;
 }
+
 
 /*-----------------------------------------------------------------HEADERS*/
 
 .headers {
-    font-size: 2.92rem;
-    line-height: 110%;
-    padding-left: 50px;
-    padding-top: 50px;
+	font-size: 2.92rem;
+	line-height: 110%;
+	padding-left: 50px;
+	padding-top: 50px;
 }
 
 .tagline {
-    font-family: 'Euphoria Script', cursive;
-    font-size: 2vw;
-    padding-left: 50px;
+	font-family: 'Euphoria Script', cursive;
+	font-size: 2vw;
+	padding-left: 50px;
 }
+
+
 /*-----------------------------------------------------------------NAVBAR*/
+
 nav ul a .material-icons {
-    text-decoration: none;
-    color: #444343
+	text-decoration: none;
+	color: #444343
 }
 
-nav .nav-item a:hover  {
-    color: #e8b3b3 !important;
-    background-color: #fafafa;
-    transition: all 0.5s ease-in-out;
-    font-size: 2vw;
-    
+nav .nav-item a:hover {
+	color: #e8b3b3 !important;
+	background-color: #fafafa;
+	transition: all 0.5s ease-in-out;
+	font-size: 2vw;
 }
 
-nav .nav-link a:active  {
-    color: #e8b3b3 !important;
-    background-color: #fafafa;
-    transition: all 0.5s ease-in-out;
-    
+nav .nav-link a:active {
+	color: #e8b3b3 !important;
+	background-color: #fafafa;
+	transition: all 0.5s ease-in-out;
 }
 
 nav .brand-logo {
-    position: absolute;
-    color: #444343;
-    display: inline-block;
-    font-size: 3vw;
-    font-family: 'Euphoria Script', cursive;
-    padding-left:5px;
-    text-decoration: none;
-   }
-  
-nav .brand-logo:hover{
-    color: #fafafa !important;
+	position: absolute;
+	color: #444343;
+	display: inline-block;
+	font-size: 3vw;
+	font-family: 'Euphoria Script', cursive;
+	padding-left: 5px;
+	text-decoration: none;
+}
 
+nav .brand-logo:hover {
+	color: #fafafa !important;
 }
+
 .navbar {
-    position: relative;
-    background-color: #aaaaaa !important;
+	position: relative;
+	background-color: #aaaaaa !important;
 }
+
 
 /*-----------------------------------------------------------------HOME PAGE*/
-.background-container{
-    margin:0;
-    max-width: 100%;
-    padding:0;
-}
- /*-----------------------------------------------------------------PARALLAX*/
-.jumbotron {
-    margin: 0;
-    border-radius: 0;
-}
-.parallaxone h2{
-  font-family: 'Euphoria Script', cursive;
-    font-size: 3vw;
-    padding-left: 50px;
 
+.background-container {
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	padding-bottom: 50px
 }
+
+
+/*---------PARALLAX*/
+
+.jumbotron {
+	margin: 0;
+	border-radius: 0;
+}
+
+.parallaxone h2 {
+	font-family: 'Euphoria Script', cursive;
+	font-size: 3vw;
+	padding-left: 50px;
+	color: #605f5f;
+}
+
 .parallaxone p {
-    font-weight: 100;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5vw;
-    margin-top: 0;
-    letter-spacing: 2px;
-    line-height: 2;} 
+	font-weight: 100;
+	text-align: center;
+	padding: 20px;
+	font-size: 1.5vw;
+	margin-top: 0;
+	letter-spacing: 2px;
+	line-height: 2;
+}
+
+.parallaxone a {
+	color: #e8b3b3
+}
 
 .parallaxone {
-    background-image: url('/static/images/home-background.png');
-    min-height: 600px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+	background-image: url('/static/images/home-background.png');
+	min-height: 600px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .parallaxtwo {
-    min-height: 600px;
-    background-color: #eaeaea;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: 50% 50%;
+	min-height: 600px;
+	background-color: #eaeaea;
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .parallaxtwo h2 {
-    font-family: 'Euphoria Script', cursive;
-    color: #605f5f;
-    letter-spacing: 7px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+	font-family: 'Euphoria Script', cursive;
+	color: #605f5f;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 4vw;
 }
 
 [type="checkbox"]:checked+span:not(.lever):before {
-    top: -4px;
-    left: -5px;
-    width: 12px;
-    height: 22px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid #e8b3b3;
-    border-bottom: 2px solid #e8b3b3;
-    -webkit-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
+	top: -4px;
+	left: -5px;
+	width: 12px;
+	height: 22px;
+	border-top: 2px solid transparent;
+	border-left: 2px solid transparent;
+	border-right: 2px solid #e8b3b3;
+	border-bottom: 2px solid #e8b3b3;
+	-webkit-transform: rotate(40deg);
+	transform: rotate(40deg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
 }
+
 .parallaxthree {
-    background-image: url('/static/images/background.jpg');
-    min-height: 600px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+	background-image: url('/static/images/background.jpg');
+	min-height: 600px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .parallaxthree h2 {
-   font-family: 'Euphoria Script', cursive;
-    color: #e8b3b3;
-    letter-spacing: 7px;
-    font-size: 4vw;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-shadow: 2px 2px grey;
+	font-family: 'Euphoria Script', cursive;
+	color: #605f5f;
+	font-size: 4vw;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.parallaxthree a {
+	color: #e8b3b3;
+	text-decoration: none;
 }
 
 
-.parallaxthree a {
-    text-decoration: none;
+/*---------PARALLAX*/
+
+label {
+	font-size: .8rem;
+	color: #434343
+}
+
+.shop-btn {
+	color: #434343;
+	border: 1px solid grey;
+	border-radius: 15px;
+	float: right;
+	background-color: #e8b3b3;
+}
+
+.shop-btn input {
+	color: #434343
+}
+
+.shop-btn input:hover {
+	color: #e8b3b3
+}
+
+.shop-btn:hover {
+	background-color: #fafafa;
+	border: 1px solid #e8b3b3;
 }
 
 
 /*-----------------------------------------------------------------TO-DO LIST*/
 
 .btn .btn_small {
-    height:24px;
-    width:60px;
-    line-height:24px;
-    margin:5px 5px;
-    padding: 0 0.5em;
-    background-color:#c9c7c7 !important;
+	height: 24px;
+	width: 60px;
+	line-height: 24px;
+	margin: 5px 5px;
+	padding: 0 0.5em;
+	background-color: #c9c7c7 !important;
 }
 
-.btn .btn_small .edit_button{
-    height:24px;
-    width:60px;
-    line-height:24px;
-    margin:5px 5px;
-    padding: 0 0.5em;
-    color: #e8b3b3 !important;
+.btn .btn_small .edit_button {
+	height: 24px;
+	width: 60px;
+	line-height: 24px;
+	margin: 5px 5px;
+	padding: 0 0.5em;
+	color: #e8b3b3 !important;
 }
 
 .row .col.s9 {
-    width: 75%;
-    padding-left: 0;
-    margin-left: 0;
-    font-family: 'Quicksand', sans-serif;
+	width: 75%;
+	padding-left: 0;
+	margin-left: 0;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .collapsible-body {
-    display: none;
-    border-bottom: 1px solid #ddd;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 2rem;
-    font-family: 'Quicksand', sans-serif;
+	display: none;
+	border-bottom: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 2rem;
+	font-family: 'Quicksand', sans-serif;
 }
+
 .input-field.col label {
-    left: 4rem;}
-
-
-.to-do-list-container{
-    background-image: url('/static/images/todo.png');
-    min-height: 1200px;
-    max-width:initial;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+	left: 4rem;
 }
 
-.add-to-do-list-container{
-    background-image: url('/static/images/todo.png');
-    min-height: 1200px;
-    max-width:initial;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    
+.to-do-list-container {
+	background-image: url('/static/images/todo.png');
+	min-height: 1200px;
+	max-width: initial;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.add-to-do-list-container {
+	background-image: url('/static/images/todo.png');
+	min-height: 1200px;
+	max-width: initial;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .add-to-do-form {
-    background-color:white;
-    padding:20px;
-    margin:70px;
-
+	background-color: white;
+	padding: 20px;
+	margin: 70px;
 }
 
 .collapsible {
-    border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    margin: .5rem 0 1rem 0;
-    width: 60%; }
-
-.form-row{
-    display:inherit
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: .5rem 0 1rem 0;
+	width: 60%;
 }
 
-.add-button{
-    background-color:#fafafa;
-    border: 1px solid #e8b3b3;
-    color:#444343;
+.form-row {
+	display: inherit
 }
 
-.add-button:hover{
-    background-color: #e8b3b3;
-    border: 1px solid #fafafa;
-    color:#fafafa;
+.add-button {
+	background-color: #fafafa;
+	border: 1px solid #e8b3b3;
+	color: #444343;
 }
+
+.add-button:hover {
+	background-color: #e8b3b3;
+	border: 1px solid #fafafa;
+	color: #fafafa;
+}
+
+
 /*----------------------------------------------------------------TIPS PAGE*/
 
-
-
 .wrap {
-    width: 100%;
-    border: 1px solid grey;
-    float: right;
-    border-radius: 50px;
-    border-radius: 0 5px 5px 0;}
-
-.wrap button, html [type="button"], [type="reset"], [type="submit"] {
-    -webkit-appearance: button;
-    background-color: transparent;
-    border: none;
+	width: 100%;
+	border: 1px solid grey;
+	float: right;
+	border-radius: 50px;
+	border-radius: 0 5px 5px 0;
 }
+
+.wrap button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+	background-color: transparent;
+	border: none;
+}
+
 .tips-page {
-    margin-bottom: 100px;
-    background-color: #fafafa;
-    min-height: auto;
+	padding-bottom: 80px;
+	background-color: #fafafa;
+	min-height: auto;
 }
 
-.pb-video-container {    
-    margin-bottom: 100px;
-    background-color: #fafafa;
-    min-height: 1200px;
-    margin-top: 60px;
-    padding-top: 10px;
-  
-    }
-
+.pb-video-container {
+	background-color: #fafafa;
+	min-height: auto;
+	margin-top: 60px;
+	padding-top: 10px;
+}
 
 .pb-video {
-        border: 1px solid #e8b3b3;
-        padding: 5px;
-    }
+	border: 1px solid #e8b3b3;
+	padding: 5px;
+}
 
 .pb-video:hover {
-        background: #e8b3b3;
-        }
+	background: #e8b3b3;
+}
 
 .pb-video-frame {
-        transition: width 2s, height 2s;
-    }
+	transition: width 2s, height 2s;
+}
 
 .pb-video-frame:hover {
-        height: 300px;
-        }
+	height: 300px;
+}
 
 .pb-row {
-        margin-bottom: 10px;
-    }
-
-.form-control{
-    text-align:center;
-    border:none;
+	margin-bottom: 10px;
 }
 
-input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+.form-control {
+	text-align: center;
+	border: none;
 }
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
 /*----------------------------------------------------------------INSPIRATION PAGE*/
 
 .inspiration-page {
-    margin-bottom: 100px;
-    background-color: #fafafa;
-    min-height: 1900px;
+	padding-bottom: 80px;
+	background-color: #fafafa;
+	min-height: 1900px;
 }
 
-.inspiration-page h2{
-   font-family: 'Euphoria Script', cursive;
+.inspiration-page h2 {
+	font-family: 'Euphoria Script', cursive;
 }
+
 .portfolio-images {
-    padding: 20px;
+	padding: 20px;
 }
 
 .img-thumbnail {
-    border: 1px solid #e8b3b3;
-    border-radius: 5px;
-    padding: 5px;
+	border: 1px solid #e8b3b3;
+	border-radius: 5px;
+	padding: 5px;
 }
 
 .item {
-    padding: 4px;
+	padding: 4px;
 }
 
-.img-thumbnail{
-    padding: .25rem;
-    background-color: #fff;
-    border: 1px solid #e8b3b3;
-    border-radius: .25rem;
-    max-width: 100%;
-    height: auto;
+.img-thumbnail {
+	padding: .25rem;
+	background-color: #fff;
+	border: 1px solid #e8b3b3;
+	border-radius: .25rem;
+	max-width: 100%;
+	height: auto;
 }
+
 
 /*----------------------------------------------------------------FOOTER*/
-    footer {
-    background-color: #c9c7c7;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    color: #fafafa;
-    bottom: 0;
-    padding-bottom: 20px;
-    height: 70px;
+
+footer {
+	background-color: #c9c7c7;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	color: #fafafa;
+	bottom: 0;
+	padding-bottom: 20px;
+	height: 70px;
 }
 
-
-
 .social-links li a i {
-    width: 50px;
-    height: 50px;
-    padding: 12px;
-    border-radius: 50%;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+	width: 50px;
+	height: 50px;
+	padding: 12px;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fafafa;
+	background: #8f8f8f;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    color: #e8b3b3 ;
+	color: #e8b3b3;
 }
 
 .footer-details {
-    padding-top: 5px;
+	padding-top: 5px;
+}
+
+
+/*----------------------------------------------------------------MEDIA QUERIES*/
+
+@media(min-width: 320px) and (max-width:991px) {
+	nav .brand-logo {
+		display: block;
+		font-size: 6vw;
+		padding-left: 5px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	nav .brand-logo {
+		left: 30%
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.nav-link {
+		display: block;
+		padding: .5rem 1rem;
+		font-size: 3vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.parallaxone {
+		background-image: url('/static/images/small-background.png');
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.parallaxone h2 {
+		font-size: 6vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.parallaxone p {
+		font-size: 3.5vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.parallaxtwo h2 {
+		font-size: 10vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.parallaxthree h2 {
+		font-size: 10vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.background-container {}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.social-links li a i {
+		line-height: 30px;
+		width: 30px;
+		height: 30px;
+		padding: 0px;
+		border-radius: 50%;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.footer-details {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	footer {
+		line-height: 50px;
+		height: 50px;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.col-md-7 {
+		max-width: 100%;
+		flex: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.parallaxone h2 {
+		font-size: 7vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.tagline {
+		font-family: 'Euphoria Script', cursive;
+		font-size: 5vw;
+		text-align: center;
+		padding-left: 0;
+	}
 }
