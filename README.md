@@ -18,7 +18,7 @@ The site can be viewed through Heroku: https://hinching-journal.herokuapp.com/ho
 
 I created Wireframes of how I wanted the site to look before starting. See below:
 ![Desktop View1](static/images/homepage.png)
-![Desktop View1](static/images/todo.png)
+![Desktop View1](static/images/todolist.png)
 ![Desktop View1](static/images/tips.png)
 ![Desktop View1](static/images/inspiration.png)
 
