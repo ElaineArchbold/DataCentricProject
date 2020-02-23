@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}   
 {% block content %}
- <div class="container">
- <h3 class="headers">Edit To-Do</h3>
-
- <div class="row">
-    <form action="{{url_for('update_task', task_id=task._id)}}" method="POST" class="col s12">
-
-<div class="row">
-
-     <div class="input-field col s12">
-                    <i class="material-icons prefix">poll</i>
-                    <select id="category" name="category_name">
+<div class="container">
+   <h3 class="headers">Edit To-Do</h3>
+   <div class="row">
+      <form action="{{url_for('update_task', task_id=task._id)}}" method="POST" class="col s12">
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="material-icons prefix">date_range</i>
+               <select id="day" name="day_id">
+                  <option value="" disabled selected>Choose Day</option>
+                  {% for day in days %}
+                  {% if day.day_id == day.day_id %}
+                  <option value="{{day.day_id}}" selected >{{day.day_id}}</option>
+                  {% else %}
+                  <option value="{{day.day_id}}">{{day.day_id}}</option>
+                  {% endif %}
+                  {% endfor %}
+               </select>
+               <label>Day</label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="material-icons prefix">poll</i>
+               <select id="category" name="category_name">
                   <option value="" disabled selected>Choose Category</option>
                   {% for cat in categories %}
-                    {% if cat.category_name == task.category_name %}
-                      <option value="{{cat.category_name}}" selected >{{cat.category_name}}</option>
-                      {% else %}
-                      <option value="{{cat.category_name}}" >{{cat.category_name}}</option>
-                      {% endif %}
+                  {% if cat.category_name == task.category_name %}
+                  <option value="{{cat.category_name}}" selected >{{cat.category_name}}</option>
+                  {% else %}
+                  <option value="{{cat.category_name}}" >{{cat.category_name}}</option>
+                  {% endif %}
                   {% endfor %}
-                </select>
-                    <label>Task Category</label>
-                </div>
-    
-  </div>
- 
-      <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons">check_box</i>
-          <input id="task_name" name="task_name" type="text" class="validate" value="{{task.task_name}}" required>
-          <label for="task_name">Task Name</label>
-        </div>
-      </div>
-        <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons">import_contacts</i>
-          <input id="products" name="products" type="text" class="validate" value="{{task.products}}" required>
-          <label for="products">Products</label>
-        </div>
-      </div>
-          <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons">import_contacts</i>
-          <input id="how_to" name="how_to" type="text" class="validate" value="{{task.how_to}}" required>
-          <label for="how_to">How To</label>
-        </div>
-      </div>
-
-     
-      <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Edit Task
-  </button>
-       </form>
-
-
-    
-    
-   
-  </div>
- </div>
+               </select>
+               <label>Task Category</label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="material-icons">check_box</i>
+               <input id="task_name" name="task_name" type="text" class="validate" value="{{task.task_name}}" required>
+               <label for="task_name">Task Name</label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="material-icons">import_contacts</i>
+               <input id="products" name="products" type="text" class="validate" value="{{task.products}}" required>
+               <label for="products">Products</label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="material-icons">import_contacts</i>
+               <input id="how_to" name="how_to" type="text" class="validate" value="{{task.how_to}}" required>
+               <label for="how_to">How To</label>
+            </div>
+         </div>
+         <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Edit Task
+         </button>
+      </form>
+   </div>
+</div>
 {% endblock %}
