@@ -22,13 +22,13 @@ def home():
 @app.route('/todo')
 def todo():
     return render_template('todo.html',
-                           tasks=mongo.db.tasks.find())
+                           tasks=mongo.db.tasks.find(), days=mongo.db.days.find(), categories=mongo.db.categories.find())
 
 
 @app.route('/addtodo')
 def addtodo():
     return render_template('addtodo.html',
-                           categories=mongo.db.categories.find())
+                           tasks=mongo.db.tasks.find(), days=mongo.db.days.find(), categories=mongo.db.categories.find())
 
 
 @app.route('/updatetodo', methods=['POST'])
@@ -42,8 +42,9 @@ def updatetodo():
 def edittodo(task_id):
     the_task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     all_categories = mongo.db.categories.find()
+    all_days = mongo.db.days.find()
     return render_template('edittodo.html',
-                           task=the_task, categories=all_categories)
+                           task=the_task, categories=all_categories, days=all_days)
 
 
 @app.route('/update_task/<task_id>', methods=["POST"])
@@ -51,6 +52,7 @@ def update_task(task_id):
     tasks = mongo.db.tasks
     tasks.update({'_id': ObjectId(task_id)},
                  {
+        'day_id': request.form.get('day_id'),
         'task_name': request.form.get('task_name'),
         'category_name': request.form.get('category_name'),
         'task_description': request.form.get('task_description'),
