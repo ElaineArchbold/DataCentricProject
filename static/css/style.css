@@ -69,6 +69,7 @@ nav .brand-logo:hover {
 .navbar {
 	position: relative;
 	background-color: #aaaaaa !important;
+    z-index: 1;
 }
 
 
@@ -107,7 +108,14 @@ nav .brand-logo:hover {
 }
 
 .parallaxone a {
-	color: #e8b3b3
+	color: #e8b3b3;
+    text-shadow: 1px 1px #434343;
+}
+
+.shopping-headers{
+    text-align:center; 
+    color:#e8b3b3;
+    text-shadow:1px 1px #434343
 }
 
 .parallaxone {
@@ -206,29 +214,42 @@ label {
 
 /*-----------------------------------------------------------------TO-DO LIST*/
 
-.btn .btn_small {
-	height: 24px;
-	width: 60px;
-	line-height: 24px;
-	margin: 5px 5px;
-	padding: 0 0.5em;
+.done_button {
+	height: 28px;
+    width: 5rem;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
 	background-color: #c9c7c7 !important;
 }
 
-.btn .btn_small .edit_button {
-	height: 24px;
-	width: 60px;
-	line-height: 24px;
-	margin: 5px 5px;
-	padding: 0 0.5em;
-	color: #e8b3b3 !important;
+.edit_button {
+    height: 28px;
+    width: 5rem;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+    color: #434343;
+    background-color: #e8b3b3 !important;
+}
+
+.edit_button:hover{
+    background-color: #fafafa !important;
+    color:#e8b3b3 !important;
+    border:1px solid  #e8b3b3;
+}
+
+.done_button:hover{
+    background-color: #fafafa !important;
+    color:#434343 !important;
+    border:1px solid #434343
 }
 
 .row .col.s9 {
 	width: 75%;
 	padding-left: 0;
 	margin-left: 0;
-	font-family: 'Quicksand', sans-serif;
+	
 }
 
 .collapsible-body {
@@ -236,8 +257,10 @@ label {
     border:none;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 2rem;
-	font-family: 'Quicksand', sans-serif;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+	
 }
 
 .input-field.col label {
@@ -246,13 +269,16 @@ label {
 
 .to-do-list-container {
 	background-image: url('/static/images/todo.png');
-	min-height: 1200px;
+	min-height: 1400px;
 	max-width: initial;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
 }
+.edit-container {
+	min-height: 1400px;
 
+}
 .add-to-do-list-container {
 	background-image: url('/static/images/todo.png');
 	min-height: 1200px;
@@ -441,6 +467,7 @@ footer {
 
 .footer-details {
 	padding-top: 5px;
+    z-index:1;
 }
 
 
@@ -460,13 +487,21 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 992px) {
+@media(min-width: 320px) and (max-width:767px) {
 	.nav-link {
-		display: block;
-		padding: .5rem 1rem;
-		font-size: 3vw;
+    font-size: 5vw;
+    line-height: 40px;
+    float: right;
 	}
 }
+
+@media (min-width: 768px) and (max-width:991px) {
+.nav-link {
+    font-size: 3vw;
+    
+	}
+}
+
 
 @media(min-width: 320px) and (max-width:991px) {
 	.parallaxone {

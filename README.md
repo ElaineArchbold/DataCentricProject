@@ -33,6 +33,7 @@ The TIPS page has a video gallery of the most popular Mrs Hinch YouTube videos. 
 
 I also created a favicon in Photoshop which can be seen on the browser tab and can further be used for social media branding.
 
+The navbar, footer and all buttons have hover states activated to change size/colour when the user hovers over them, to improve the UX.
 
 ### Features Left to Implement
 With the Mrs Hinch login details for Instagram, I would be able to replace the Instagram iframe on the home page with her Instagram feed.

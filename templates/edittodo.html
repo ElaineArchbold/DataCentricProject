@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}   
 {% block content %}
-<div class="container">
+<div class="container edit-container">
    <h3 class="headers">Edit To-Do</h3>
    <div class="row">
       <form action="{{url_for('update_task', task_id=task._id)}}" method="POST" class="col s12">
@@ -11,7 +11,7 @@
                <select id="day" name="day_id">
                   <option value="" disabled selected>Choose Day</option>
                   {% for day in days %}
-                  {% if day.day_id == day.day_id %}
+                  {% if day.task_id == day.day_id %}
                   <option value="{{day.day_id}}" selected >{{day.day_id}}</option>
                   {% else %}
                   <option value="{{day.day_id}}">{{day.day_id}}</option>

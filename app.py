@@ -28,7 +28,7 @@ def todo():
 @app.route('/addtodo')
 def addtodo():
     return render_template('addtodo.html',
-                           categories=mongo.db.categories.find(), days=mongo.db.days.find() )
+                           categories=mongo.db.categories.find(), days=mongo.db.days.find())
 
 
 @app.route('/updatetodo', methods=['POST'])
