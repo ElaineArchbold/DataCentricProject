@@ -214,6 +214,7 @@ label {
 
 /*-----------------------------------------------------------------TO-DO LIST*/
 
+
 .done_button {
 	height: 28px;
     width: 5rem;
@@ -307,18 +308,30 @@ label {
 }
 
 .add-button {
-	background-color: #fafafa;
-	border: 1px solid #e8b3b3;
+	background-color: #e8b3b3!important;
+	border: 1px solid #fafafa;
 	color: #444343;
+    width: 10rem;
 }
 
 .add-button:hover {
-	background-color: #e8b3b3;
-	border: 1px solid #fafafa;
-	color: #fafafa;
+	background-color: #fafafa!important;
+	border: 1px solid #e8b3b3;
+	color: #e8b3b3;
 }
 
+.done-button {
+	background-color: #444343 !important;
+	border: 1px solid #e8b3b3;
+	color: #fafafa;
+    width: 10rem;
+}
 
+.done-button:hover {
+	background-color: #fafafa!important;
+	border: 1px solid #444343;
+	color: #444343;
+}
 /*----------------------------------------------------------------TIPS PAGE*/
 
 .wrap {

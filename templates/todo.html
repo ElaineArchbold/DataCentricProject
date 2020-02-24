@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 {% extends 'base.html'%} {% block content %}
 <div class="to-do-list-container">
-   
    <div class="container">
-   <h3 class="headers">To Do</h3>
+      <h3 class="headers">To Do</h3>
       <div class="col-md-12">
          <ul class="collapsible" data-collapsible="accordion">
             {% for day in days %}
@@ -21,9 +20,9 @@
                </div>
                <div class="collapsible-body">
                   <div class="row">
-                  <span>
-              <strong>Products:</strong> {{task.products}}<br><strong>How To:</strong> {{task.how_to}}
-                  </span>
+                     <span>
+                     <strong>Products:</strong> {{task.products}}<br><strong>How To:</strong> {{task.how_to}}
+                     </span>
                   </div>
                </div>
             </li>
@@ -31,15 +30,17 @@
             {% endfor %}
          </ul>
       </div>
-      
       <!--BUTTONS-->
       <div class="form-row text-center">
-         <div class="col 12">
+         <div class="col-md-12">
             <form action="{{url_for('addtodo')}}">
                <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
                </button>
+               <button class="btn waves-effect waves-light done-button" type="submit" name="action" style="text-align:center">Completed
+               </button>
             </form>
          </div>
+         
       </div>
       <!--BUTTONS-->
    </div>
