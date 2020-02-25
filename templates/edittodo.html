@@ -5,17 +5,17 @@
    <h3 class="headers">Edit To-Do</h3>
    <div class="row">
       <form action="{{url_for('update_task', task_id=task._id)}}" method="POST" class="col s12">
-         <div class="row">
+       <div class="row">
             <div class="input-field col s12">
                <i class="material-icons prefix">date_range</i>
-               <select id="day" name="day_id">
-                  <option value="" disabled selected>Choose Day</option>
-                  {% for day in days %}
-                  {% if day.task_id == day.day_id %}
-                  <option value="{{day.day_id}}" selected >{{day.day_id}}</option>
-                  {% else %}
+               <select id="day" name="day_id" required>
+                <option value="" disabled selected>Choose Day</option>
+               {% for day in days %}
+                  {% if day.day_id == task.day_id %}
+                 <option value="{{day.day_id}}" selected >{{day.day_id}}</option>
+                 {% else %}
                   <option value="{{day.day_id}}">{{day.day_id}}</option>
-                  {% endif %}
+                   {% endif %}
                   {% endfor %}
                </select>
                <label>Day</label>
@@ -44,13 +44,24 @@
                <label for="task_name">Task Name</label>
             </div>
          </div>
-         <div class="row">
+
+    <div class="row">
             <div class="input-field col s12">
-               <i class="material-icons">import_contacts</i>
-               <input id="products" name="products" type="text" class="validate" value="{{task.products}}" required>
-               <label for="products">Products</label>
+               <i class="material-icons prefix">shopping_basket</i>
+               <select multiple id="product__name" name="product_name">
+                  <option value="" disabled>Choose Products</option>
+                     {% for prod in products %}
+          {% if prod.product_name == task.product_name %}
+                  <option value="{{prod.product_name}}" selected>{{prod.product_name}}</option>
+            {% else %}
+                 <option value="{{prod.product_name}}">{{prod.product_name}}</option>
+                  {% endif %}
+                   {% endfor %}
+               </select>
+               <label>Products</label>
             </div>
          </div>
+
          <div class="row">
             <div class="input-field col s12">
                <i class="material-icons">import_contacts</i>

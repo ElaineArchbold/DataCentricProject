@@ -8,7 +8,7 @@
            <div class="row">
             <div class="input-field col s12">
                <i class="material-icons prefix">date_range</i>
-               <select id="day" name="day_id">
+               <select id="day" name="day_id" required>
                   <option value="" disabled selected>Choose Day</option>
                   {% for day in days %}
                   <option value="{{day.day_id}}" required>{{day.day_id}}</option>
@@ -20,10 +20,10 @@
          <div class="row">
             <div class="input-field col s12">
                <i class="material-icons prefix">poll</i>
-               <select id="category" name="category_name">
+               <select id="category_name" name="category_name" required>
                   <option value="" disabled selected>Choose Category</option>
                   {% for cat in categories %}
-                  <option value="{{cat.category_name}}" required>{{cat.category_name}}</option>
+                  <option value="{{cat.category_name}}" >{{cat.category_name}}</option>
                   {% endfor %}
                </select>
                <label>Task Category</label>
@@ -38,9 +38,14 @@
          </div>
          <div class="row">
             <div class="input-field col s12">
-               <i class="material-icons">shopping_basket</i>
-               <input id="products" name="how_to" type="text" class="validate" required>
-               <label for="products">Products</label>
+               <i class="material-icons prefix">shopping_basket</i>
+               <select multiple id="product_name" name="product_name">
+                  <option value="" disabled selected>Choose Products</option>
+                 {% for prod in products %}
+                  <option value="{{prod.product_name}}">{{prod.product_name}}</option>
+                  {% endfor %}
+               </select>
+               <label>Products</label>
             </div>
          </div>
          <div class="row">

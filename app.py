@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for, flash
+from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from os import path
@@ -22,13 +22,13 @@ def home():
 @app.route('/todo')
 def todo():
     return render_template('todo.html',
-                           tasks=mongo.db.tasks.find(), days=mongo.db.days.find())
+                           tasks=mongo.db.tasks.find(), categories=mongo.db.categories.find(), days=mongo.db.days.find(), products=mongo.db.products.find())
 
 
 @app.route('/addtodo')
 def addtodo():
     return render_template('addtodo.html',
-                           categories=mongo.db.categories.find(), days=mongo.db.days.find())
+                           tasks=mongo.db.tasks.find(), categories=mongo.db.categories.find(), days=mongo.db.days.find(), products=mongo.db.products.find())
 
 
 @app.route('/updatetodo', methods=['POST'])
@@ -43,8 +43,9 @@ def edittodo(task_id):
     the_task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     all_categories = mongo.db.categories.find()
     all_days = mongo.db.days.find()
+    all_products = mongo.db.products.find()
     return render_template('edittodo.html',
-                           task=the_task, categories=all_categories, days=all_days)
+                           task=the_task, categories=all_categories, days=all_days, products=all_products)
 
 
 @app.route('/update_task/<task_id>', methods=["POST"])
@@ -56,7 +57,7 @@ def update_task(task_id):
         'task_name': request.form.get('task_name'),
         'category_name': request.form.get('category_name'),
         'task_description': request.form.get('task_description'),
-        'products': request.form.get('products'),
+        'product_name': request.form.get('product_name'),
         'how_to': request.form.get('how_to'),
     })
     return redirect(url_for('todo'))

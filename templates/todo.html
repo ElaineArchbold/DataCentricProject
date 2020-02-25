@@ -16,12 +16,16 @@
                   <div class="col-md-3">
                      <a href="{{url_for('edittodo', task_id=task._id)}}" class="btn btn_small edit_button">Edit</a>
                      <a href="{{url_for('completed', task_id=task._id)}}" class="btn btn_small done_button">Done</a>
+                     
                   </div>
+
+          
                </div>
                <div class="collapsible-body">
+                
                   <div class="row">
                      <span>
-                     <strong>Products:</strong> {{task.products}}<br><strong>How To:</strong> {{task.how_to}}
+                     <strong>Products:</strong> {{task.product_name}}   <br><strong>How To:</strong> {{task.how_to}}   
                      </span>
                   </div>
                </div>
@@ -36,9 +40,8 @@
             <form action="{{url_for('addtodo')}}">
                <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
                </button>
-               <button class="btn waves-effect waves-light done-button" type="submit" name="action" style="text-align:center">Completed
-               </button>
             </form>
+              
          </div>
          
       </div>
