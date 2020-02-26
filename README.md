@@ -10,7 +10,7 @@ I kept the Navbar and footer simple, and the lightbox on the inspiration page gi
 
 *User A – wants to create their tailor made Mrs Hinch shopping list, and either print it to take it shopping with them, or use the app while they are out and about. On the home page, as you scroll past the opening paragraph, there is a shopping list containing all of the Mrs Hinch must-have items. 
 
-*User B – wants to create and up-date an online cleaning to-do list. In the To-Do page, I have created a To-Do list, using MongoDB where the user can add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go. There is also a tab for checking completed tasks so they can see what they have done.
+*User B – wants to create and up-date an online cleaning to-do list. In the To-Do page, I have created a To-Do list, using MongoDB where the user can add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go.
 
 *User C - wants to search for tips for cleaning. On the tips page, there are the most popular Mrs Hinch YouTube videos. I have also wired up a search bar to take users directly to her YouTube channel to search through her full collection of videos.
 
@@ -27,7 +27,7 @@ I created Wireframes of how I wanted the site to look before starting. See below
 ### Existing Features
 The HOME page features a scrolling parallax effect, with three sections. Section one is an introductory paragraph from Mrs Hinch, taken from her book introduction. Section two is a shopping list, where users can select the most popular Mrs Hinch items that they may need to stock up on. Section three contains iframes for YouTube and Instagram. The Instagram feed could be added here, with login details from Mrs Hinch.
 
-The TO-DO page uses a MongoDB database to allow the user to add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go. There is also a tab for checking completed tasks so they can see what they have done.
+The TO-DO page uses a MongoDB database to allow the user to add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go. 
 
 The TIPS page has a video gallery of the most popular Mrs Hinch YouTube videos. I have also created and wired up a search bar which brings users directly the Mrs Hinch YouTube channel. I used Google developer tools on YouTube to find the correct code for this.
 

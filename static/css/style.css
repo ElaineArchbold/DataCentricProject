@@ -214,6 +214,14 @@ label {
 
 /*-----------------------------------------------------------------TO-DO LIST*/
 
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #e8b3b3;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #f7e9e9;
+   
+}
 
 .done_button {
 	height: 28px;
@@ -222,6 +230,7 @@ label {
     margin: 5px 5px;
     padding: 0 0.5em;
 	background-color: #c9c7c7 !important;
+    font-size:1vw;
 }
 
 .edit_button {
@@ -232,6 +241,7 @@ label {
     padding: 0 0.5em;
     color: #434343;
     background-color: #e8b3b3 !important;
+    font-size:1vw;
 }
 
 .edit_button:hover{
@@ -332,6 +342,15 @@ label {
 	border: 1px solid #444343;
 	color: #444343;
 }
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: #e69a9a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;}
+
+
 /*----------------------------------------------------------------TIPS PAGE*/
 
 .wrap {
@@ -340,6 +359,9 @@ label {
 	float: right;
 	border-radius: 50px;
 	border-radius: 0 5px 5px 0;
+}
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #e8b3b3;
 }
 
 .wrap button,

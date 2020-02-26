@@ -5,17 +5,17 @@
    <h3 class="headers">Edit To-Do</h3>
    <div class="row">
       <form action="{{url_for('update_task', task_id=task._id)}}" method="POST" class="col s12">
-       <div class="row">
+         <div class="row">
             <div class="input-field col s12">
                <i class="material-icons prefix">date_range</i>
                <select id="day" name="day_id" required>
-                <option value="" disabled selected>Choose Day</option>
-               {% for day in days %}
+                  <option value="" disabled selected>Choose Day</option>
+                  {% for day in days %}
                   {% if day.day_id == task.day_id %}
-                 <option value="{{day.day_id}}" selected >{{day.day_id}}</option>
-                 {% else %}
+                  <option value="{{day.day_id}}" selected >{{day.day_id}}</option>
+                  {% else %}
                   <option value="{{day.day_id}}">{{day.day_id}}</option>
-                   {% endif %}
+                  {% endif %}
                   {% endfor %}
                </select>
                <label>Day</label>
@@ -44,33 +44,40 @@
                <label for="task_name">Task Name</label>
             </div>
          </div>
-
-    <div class="row">
+         <div class="row">
             <div class="input-field col s12">
-               <i class="material-icons prefix">shopping_basket</i>
-               <select multiple id="product__name" name="product_name">
-                  <option value="" disabled>Choose Products</option>
-                     {% for prod in products %}
-          {% if task.product_name == prod.product_name %}
-                  <option value="{{prod.product_name}}" selected>{{prod.product_name}}</option>
-            {% else %}
-                 <option value="{{prod.product_name}}">{{prod.product_name}}</option>
-                  {% endif %}
-                   {% endfor %}
-               </select>
-               <label>Products</label>
+               <i class="material-icons">shopping_basket</i>
+               <input id="productse" name="products" type="text" class="validate" value="{{task.products}}">
+               <label for="products">Products</label>
             </div>
          </div>
-
          <div class="row">
             <div class="input-field col s12">
                <i class="material-icons">import_contacts</i>
-               <input id="how_to" name="how_to" type="text" class="validate" value="{{task.how_to}}" required>
+               <input id="how_to" name="how_to" type="text" class="validate" value="{{task.how_to}}">
                <label for="how_to">How To</label>
             </div>
          </div>
-         <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Edit Task
-         </button>
+         <div class="row">
+            <div class="switch">
+               <label>
+               To-Do
+               {% if task.is_complete %}
+               <input id="is_complete" name="is_complete" type="checkbox" checked>
+               {% else %}
+               <input id="is_complete" name="is_complete" type="checkbox">
+               {% endif%}
+               <span class="lever"></span>
+               Done
+               </label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="input-field col s12">
+               <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Edit Task
+               </button>
+            </div>
+         </div>
       </form>
    </div>
 </div>

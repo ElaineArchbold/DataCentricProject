@@ -36,25 +36,27 @@
                <label for="task_name">Task Name</label>
             </div>
          </div>
-         <div class="row">
-            <div class="input-field col s12">
-               <i class="material-icons prefix">shopping_basket</i>
-               <select multiple id="product_name" name="product_name">
-                  <option value="" disabled selected>Choose Products</option>
-                 {% for prod in products %}
-                  <option value="{{prod.product_name}}">{{prod.product_name}}</option>
-                  {% endfor %}
-               </select>
-               <label>Products</label>
-            </div>
-         </div>
+          <div class="row">
+        <div class="input-field col s12">
+          <textarea id="products" name="products" class="materialize-textarea" ></textarea>
+          <label for="textarea1">Products</label>
+        </div>
+      </div>
          <div class="row">
             <div class="input-field col s12">
                <i class="material-icons">import_contacts</i>
-               <input id="how_to" name="how_to" type="text" class="validate" required>
+               <input id="how_to" name="how_to" type="text" class="validate" >
                <label for="how_to">How To</label>
             </div>
          </div>
+     <div class="switch">
+    <label>
+     To-Do
+      <input id="is_complete" name="is_complete" type="checkbox">
+      <span class="lever"></span>
+    Done
+    </label>
+  </div>
          <div class="form-row text-center">
             <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
             </button>
