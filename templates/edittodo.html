@@ -51,7 +51,7 @@
                <select multiple id="product__name" name="product_name">
                   <option value="" disabled>Choose Products</option>
                      {% for prod in products %}
-          {% if prod.product_name == task.product_name %}
+          {% if task.product_name == prod.product_name %}
                   <option value="{{prod.product_name}}" selected>{{prod.product_name}}</option>
             {% else %}
                  <option value="{{prod.product_name}}">{{prod.product_name}}</option>

@@ -34,7 +34,7 @@ def addtodo():
 @app.route('/updatetodo', methods=['POST'])
 def updatetodo():
     tasks = mongo.db.tasks
-    tasks.insert_one(request.form.to_dict())
+    tasks.insert(request.form.to_dict())
     return redirect(url_for('todo'))
 
 
@@ -50,9 +50,9 @@ def edittodo(task_id):
 
 @app.route('/update_task/<task_id>', methods=["POST"])
 def update_task(task_id):
-    tasks = mongo.db.tasks
-    tasks.update({'_id': ObjectId(task_id)},
-                 {
+    task = mongo.db.tasks
+    task.update({'_id': ObjectId(task_id)},
+                {
         'day_id': request.form.get('day_id'),
         'task_name': request.form.get('task_name'),
         'category_name': request.form.get('category_name'),
