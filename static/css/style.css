@@ -69,7 +69,7 @@ nav .brand-logo:hover {
 .navbar {
 	position: relative;
 	background-color: #aaaaaa !important;
-    z-index: 1;
+	z-index: 1;
 }
 
 
@@ -109,13 +109,13 @@ nav .brand-logo:hover {
 
 .parallaxone a {
 	color: #e8b3b3;
-    text-shadow: 1px 1px #434343;
+	text-shadow: 1px 1px #434343;
 }
 
-.shopping-headers{
-    text-align:center; 
-    color:#e8b3b3;
-    text-shadow:1px 1px #434343
+.shopping-headers {
+	text-align: center;
+	color: #e8b3b3;
+	text-shadow: 1px 1px #434343
 }
 
 .parallaxone {
@@ -215,63 +215,60 @@ label {
 /*-----------------------------------------------------------------TO-DO LIST*/
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #e8b3b3;
+	background-color: #e8b3b3;
 }
 
 .switch label input[type=checkbox]:checked+.lever {
-    background-color: #f7e9e9;
-   
+	background-color: #f7e9e9;
 }
 
 .done_button {
 	height: 28px;
-    width: 5rem;
-    line-height: 24px;
-    margin: 5px 5px;
-    padding: 0 0.5em;
+	width: 5rem;
+	line-height: 24px;
+	margin: 5px 5px;
+	padding: 0 0.5em;
 	background-color: #c9c7c7 !important;
-    font-size:1vw;
+	font-size: 1vw;
 }
 
 .edit_button {
-    height: 28px;
-    width: 5rem;
-    line-height: 24px;
-    margin: 5px 5px;
-    padding: 0 0.5em;
-    color: #434343;
-    background-color: #e8b3b3 !important;
-    font-size:1vw;
+	height: 28px;
+	width: 5rem;
+	line-height: 24px;
+	margin: 5px 5px;
+	padding: 0 0.5em;
+	color: #434343;
+	background-color: #e8b3b3 !important;
+	font-size: 1vw;
 }
 
-.edit_button:hover{
-    background-color: #fafafa !important;
-    color:#e8b3b3 !important;
-    border:1px solid  #e8b3b3;
+.edit_button:hover {
+	background-color: #fafafa !important;
+	color: #e8b3b3 !important;
+	border: 1px solid #e8b3b3;
 }
 
-.done_button:hover{
-    background-color: #fafafa !important;
-    color:#434343 !important;
-    border:1px solid #434343
+.done_button:hover {
+	background-color: #fafafa !important;
+	color: #434343 !important;
+	border: 1px solid #434343
 }
 
 .row .col.s9 {
 	width: 75%;
 	padding-left: 0;
 	margin-left: 0;
-	
 }
 
 .collapsible-body {
 	display: none;
-    border:none;
+	border: none;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-    padding-left: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 0;
-	
+	padding-left: 5rem;
+	padding-top: 1rem;
+	padding-bottom: 0;
 }
 
 .input-field.col label {
@@ -286,10 +283,11 @@ label {
 	background-size: cover;
 	background-position: 50% 50%;
 }
+
 .edit-container {
 	min-height: 1400px;
-
 }
+
 .add-to-do-list-container {
 	background-image: url('/static/images/todo.png');
 	min-height: 1200px;
@@ -321,7 +319,7 @@ label {
 	background-color: #e8b3b3!important;
 	border: 1px solid #fafafa;
 	color: #444343;
-    width: 10rem;
+	width: 10rem;
 }
 
 .add-button:hover {
@@ -334,7 +332,7 @@ label {
 	background-color: #444343 !important;
 	border: 1px solid #e8b3b3;
 	color: #fafafa;
-    width: 10rem;
+	width: 10rem;
 }
 
 .done-button:hover {
@@ -343,12 +341,14 @@ label {
 	color: #444343;
 }
 
-.dropdown-content li>a, .dropdown-content li>span {
-    font-size: 16px;
-    color: #e69a9a;
-    display: block;
-    line-height: 22px;
-    padding: 14px 16px;}
+.dropdown-content li>a,
+.dropdown-content li>span {
+	font-size: 16px;
+	color: #e69a9a;
+	display: block;
+	line-height: 22px;
+	padding: 14px 16px;
+}
 
 
 /*----------------------------------------------------------------TIPS PAGE*/
@@ -360,8 +360,9 @@ label {
 	border-radius: 50px;
 	border-radius: 0 5px 5px 0;
 }
+
 .select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid #e8b3b3;
+	border-bottom: 1px solid #e8b3b3;
 }
 
 .wrap button,
@@ -502,7 +503,7 @@ footer {
 
 .footer-details {
 	padding-top: 5px;
-    z-index:1;
+	z-index: 1;
 }
 
 
@@ -524,19 +525,17 @@ footer {
 
 @media(min-width: 320px) and (max-width:767px) {
 	.nav-link {
-    font-size: 5vw;
-    line-height: 40px;
-    float: right;
+		font-size: 5vw;
+		line-height: 40px;
+		float: right;
 	}
 }
 
 @media (min-width: 768px) and (max-width:991px) {
-.nav-link {
-    font-size: 3vw;
-    
+	.nav-link {
+		font-size: 3vw;
 	}
 }
-
 
 @media(min-width: 320px) and (max-width:991px) {
 	.parallaxone {
@@ -566,10 +565,6 @@ footer {
 	.parallaxthree h2 {
 		font-size: 10vw;
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.background-container {}
 }
 
 @media(min-width: 320px) and (max-width:991px) {
@@ -617,5 +612,96 @@ footer {
 		font-size: 5vw;
 		text-align: center;
 		padding-left: 0;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	.done_button {
+		width: 3rem;
+		font-size: 2vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.done_button {
+		width: 3rem;
+		font-size: 1vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	.edit_button {
+		width: 3rem;
+		font-size: 2vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.edit_button {
+		width: 3rem;
+		font-size: 1vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	.task_header {
+		font-size: 3vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.task_header {
+		font-size: 2vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	.switch label .lever {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	.add-to-do-form {
+		margin: 10px;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.edit-container {
+		min-height: 1400px;
+		margin-left: 20px;
+		margin-right: 24px;
+		width: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: #fafafa;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	input[type=text]:not(.browser-default) {
+		font-size: 4vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	input[type=text]:not(.browser-default) {
+		font-size: 2vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:767px) {
+	.select-wrapper input.select-dropdown {
+		font-size: 4vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.select-wrapper input.select-dropdown {
+		font-size: 2vw;
 	}
 }
