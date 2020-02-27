@@ -74,6 +74,53 @@ def tips():
     return render_template('tips.html')
 
 
+@app.route('/shopping')
+def shopping():
+    return render_template('shopping.html')
+
+
+@app.route('/products')
+def products():
+    return render_template('products.html',
+                           products=mongo.db.products.find())
+
+
+@app.route('/addproduct')
+def addproduct():
+    return render_template('addproduct.html',
+                           products=mongo.db.products.find())
+
+
+@app.route('/updateproduct', methods=['POST'])
+def updateproduct():
+    products = mongo.db.products
+    products.insert_one(request.form.to_dict())
+    return redirect(url_for('products'))
+
+
+@app.route('/editproduct/<product_id>')
+def editproduct(product_id):
+    the_product = mongo.db.products.find_one({"_id": ObjectId(product_id)})
+    return render_template('editproduct.html',
+                           product=the_product)
+
+
+@app.route('/update_product/<product_id>', methods=["POST"])
+def update_product(product_id):
+    product = mongo.db.products
+    product.update({'_id': ObjectId(product_id)},
+                   {
+        'product_name': request.form.getlist('product_name'),
+    })
+    return redirect(url_for('shopping'))
+
+
+@app.route('/removeproduct/<product_id>')
+def removeproduct(product_id):
+    mongo.db.products.remove({'_id': ObjectId(product_id)})
+    return redirect(url_for('shopping'))
+
+
 @app.route('/inspiration')
 def inspiration():
     return render_template('inspiration.html')

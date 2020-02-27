@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends 'base.html'%} {% block content %}
+<div class="to-do-list-container">
+   <div class="container">
+      <h3 class="headers">Products</h3>
+      <div class="col-md-12">
+         <ul class="collapsible" data-collapsible="accordion">
+
+            {% for prod in products %}
+            {{prod.product_name}}
+            <li>
+               <div class="collapsible-header">
+                  <i class="material-icons">expand_more</i>
+                  <div class="task_header col-md-6">
+                     <strong>{{prod.product_name}}</strong> 
+                  </div>
+                
+                  <div class="col-md-3">
+                     <a href="#" class="btn btn_small edit_button">Edit</a>
+                     <a href="#" class="btn btn_small done_button">Remove</a>
+                  </div>
+               </div>
+               <div class="collapsible-body">
+                  <div class="row">
+                     <span>
+                     <strong>Products:</strong> {{prod.product_name}}     
+                     </span>
+                  </div>
+               </div>
+            </li>
+            {% endfor %}
+           
+         </ul>
+      </div>
+      <!--BUTTONS-->
+      <div class="form-row text-center">
+         <div class="col-md-12">
+            <form action="{{url_for('addproduct')}}">
+               <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
+               </button>
+            </form>
+         </div>
+      </div>
+      <!--BUTTONS-->
+   </div>
+</div>
+{% endblock %}

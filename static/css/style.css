@@ -127,7 +127,7 @@ nav .brand-logo:hover {
 }
 
 .parallaxtwo {
-	min-height: 600px;
+	min-height: 1200px;
 	background-color: #eaeaea;
 	background-attachment: scroll;
 	background-size: cover;
@@ -413,27 +413,18 @@ html [type="button"],
 	border: none;
 }
 
-input:not([type]):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=url]:not(.browser-default):focus:not([readonly]),
-input[type=time]:not(.browser-default):focus:not([readonly]),
-input[type=date]:not(.browser-default):focus:not([readonly]),
-input[type=datetime]:not(.browser-default):focus:not([readonly]),
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-input[type=tel]:not(.browser-default):focus:not([readonly]),
-input[type=number]:not(.browser-default):focus:not([readonly]),
-input[type=search]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-	border-bottom: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
+.label-warning {
+    background-color: #fafafa;}
+
+/*----------------------------------------------------------------SHOPPING LIST*/
+
+.save-cb-state checkbox{
+    position: relative;
+    opacity: 0;
+    pointer-events: all;
+    border: 2px solid black;
 }
-
-
 /*----------------------------------------------------------------INSPIRATION PAGE*/
-
 .inspiration-page {
 	padding-bottom: 80px;
 	background-color: #fafafa;
@@ -506,8 +497,9 @@ footer {
 	z-index: 1;
 }
 
-
 /*----------------------------------------------------------------MEDIA QUERIES*/
+
+
 
 @media(min-width: 320px) and (max-width:991px) {
 	nav .brand-logo {
@@ -672,7 +664,7 @@ footer {
 
 @media(min-width: 320px) and (max-width:991px) {
 	.edit-container {
-		min-height: 1400px;
+		min-height: auto;
 		margin-left: 20px;
 		margin-right: 20px;
 		width: auto;

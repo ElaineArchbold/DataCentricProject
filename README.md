@@ -2,13 +2,12 @@
 
 For this project, I created a website around the book ‘Mrs Hinch, the Activity Journal’. ‘Mrs Hinch’ is Sophie Hinchliffe. She has a huge online following, particularly on Instagram and YouTube. She is ALL about cleaning. She shares cleaning tips and hacks with her followers, and has released a book, and now an Activity Journal where people can write down their to-do lists, shopping lists and cleaning tips or hacks. 
 
-
 ## UX
 My goal in the design was to create a very user friendly site where users could access everything to do with Mrs Hinch in one place. 
 
 I kept the Navbar and footer simple, and the lightbox on the inspiration page gives an overall gallery view before an image is selected, which is when the lightbox effect kicks in. The images used are from unsplash.com, but these could be replaced with professional photos of Mrs Hinch’s home.
 
-*User A – wants to create their tailor made Mrs Hinch shopping list, and either print it to take it shopping with them, or use the app while they are out and about. On the home page, as you scroll past the opening paragraph, there is a shopping list containing all of the Mrs Hinch must-have items. 
+*User A – wants to create their tailor made Mrs Hinch shopping list, and either print it to take it shopping with them, or use the app while they are out and about. On the home page, as you scroll past the opening paragraph, there is a shopping list containing all of the Mrs Hinch must-have items. There are javascript functios written to save items or unsave them, as the user clicks on the checkbox. 
 
 *User B – wants to create and up-date an online cleaning to-do list. In the To-Do page, I have created a To-Do list, using MongoDB where the user can add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go.
 
@@ -25,7 +24,7 @@ I created Wireframes of how I wanted the site to look before starting. See below
 
 ## Features
 ### Existing Features
-The HOME page features a scrolling parallax effect, with three sections. Section one is an introductory paragraph from Mrs Hinch, taken from her book introduction. Section two is a shopping list, where users can select the most popular Mrs Hinch items that they may need to stock up on. Section three contains iframes for YouTube and Instagram. The Instagram feed could be added here, with login details from Mrs Hinch.
+The HOME page features a scrolling parallax effect, with three sections. Section one is an introductory paragraph from Mrs Hinch, taken from her book introduction. Section two is a shopping list, where users can select the most popular Mrs Hinch items that they may need to stock up on. The users choices are saved until unchecked using javascript. Section three contains iframes for YouTube and Instagram. The Instagram feed could be added here, with login details from Mrs Hinch.
 
 The TO-DO page uses a MongoDB database to allow the user to add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go. 
 
@@ -36,7 +35,8 @@ I also created a favicon in Photoshop which can be seen on the browser tab and c
 The navbar, footer and all buttons have hover states activated to change size/colour when the user hovers over them, to improve the UX.
 
 ### Features Left to Implement
-With the Mrs Hinch login details for Instagram, I would be able to replace the Instagram iframe on the home page with her Instagram feed.
+1. This site is specific to each user, so would need users to login to access their own to-do database and shopping list.
+2. With the Mrs Hinch login details for Instagram, I would be able to replace the Instagram iframe on the home page with her Instagram feed.
 
 
 ## Technologies Used
@@ -119,4 +119,6 @@ I found the scrolling parallax tutorial on: https://www.w3schools.com/howto/howt
 I found the lightbox snippet on the Portfolio page on: https://epicbootstrap.com/snippets/lightbox-gallery
 
 I found the snippet for the YouTube video gallery on: http://www.prebootstrap.com/bootstrap-template/video-gallery
+
+I found the javascript function for storing the shopping list on: http://www.marcorpsa.com/ee/t2641.html
 

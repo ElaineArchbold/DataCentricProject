@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}   
+{% block content %}
+ {% for prod in products %}
+ 
+        
+         <div class="row">
+            <ul>
+          
+            </ul>
+         </div>
+  <form action="{{url_for('updateproduct')}}" method="POST" class="col s12">
+ 
+         <div class="row">
+               <input id="product_name" name="product_name" type="text" class="validate" required>
+               <label for="product_name"> Add new products</label>
+            
+         </div>
+          
+         <div class="form-row text-center">
+            <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
+            </button>
+         </div>
+      </form>
+
+{% endblock %}
+
