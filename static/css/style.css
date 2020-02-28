@@ -132,6 +132,7 @@ nav .brand-logo:hover {
 	background-attachment: scroll;
 	background-size: cover;
 	background-position: 50% 50%;
+    padding-bottom:100px;
 }
 
 .parallaxtwo h2 {
@@ -550,6 +551,12 @@ footer {
 @media(min-width: 320px) and (max-width:991px) {
 	.parallaxtwo h2 {
 		font-size: 10vw;
+	}
+}
+
+@media(min-width: 320px) and (max-width:991px) {
+	.parallaxtwo {
+		padding-bottom: 80px;
 	}
 }
 

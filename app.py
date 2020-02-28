@@ -98,27 +98,21 @@ def updateproduct():
     return redirect(url_for('products'))
 
 
-@app.route('/editproduct/<product_id>')
-def editproduct(product_id):
-    the_product = mongo.db.products.find_one({"_id": ObjectId(product_id)})
-    return render_template('editproduct.html',
-                           product=the_product)
-
-
 @app.route('/update_product/<product_id>', methods=["POST"])
 def update_product(product_id):
     product = mongo.db.products
     product.update({'_id': ObjectId(product_id)},
                    {
-        'product_name': request.form.getlist('product_name'),
+        'product_name': request.form.get('product_name'),
+
     })
-    return redirect(url_for('shopping'))
+    return redirect(url_for('products'))
 
 
-@app.route('/removeproduct/<product_id>')
-def removeproduct(product_id):
+@app.route('/remove/<product_id>')
+def remove(product_id):
     mongo.db.products.remove({'_id': ObjectId(product_id)})
-    return redirect(url_for('shopping'))
+    return redirect(url_for('products'))
 
 
 @app.route('/inspiration')

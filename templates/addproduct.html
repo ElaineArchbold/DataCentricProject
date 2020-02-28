@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}   
 {% block content %}
- {% for prod in products %}
- 
-        
+
+     
          <div class="row">
             <ul>
           
@@ -12,14 +11,16 @@
   <form action="{{url_for('updateproduct')}}" method="POST" class="col s12">
  
          <div class="row">
-               <input id="product_name" name="product_name" type="text" class="validate" required>
-               <label for="product_name"> Add new products</label>
+         <div class="col-md-6">
+               <input id="product_name" name="product_name" type="text">
+               <label for="product_name"> Add new product</label>
             
          </div>
           
-         <div class="form-row text-center">
+         <div class="form-row text-center col-md-3">
             <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
             </button>
+         </div>
          </div>
       </form>
 

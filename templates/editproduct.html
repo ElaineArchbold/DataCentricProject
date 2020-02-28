@@ -6,6 +6,7 @@
    <div class="row">
    {% for prod in products %}
       <form action="{{url_for('update_product', product_id=product._id)}}" method="POST" class="col s12">
+     
          <div class="row">
             <div class="input-field col s12">
                <i class="material-icons">shopping_basket</i>
@@ -21,7 +22,7 @@
             </div>
          </div>
       </form>
-      {% endfor %}
+     {% endfor %}
    </div>
 </div>
 {% endblock %}
