@@ -15,15 +15,21 @@
    </section>
    <!--SECTION TWO-->
    <!--Shopping List-->
-   <div class="jumbotron parallaxtwo shopping">
+
+  <div class="jumbotron parallaxtwo shopping">
       <div class="container">
-         <div class="col-md-3">
-            <a href="{{url_for('shopping')}}">
-               <h2>View your own shopping list!</h2>
-            </a>
-         </div>
+      <div class="row">
+         <div class="col-md-12" style="text-align:center">
+            <a href="{{url_for('shopping')}}"><i class="material-icons" style="font-size:10vw; text-shadow:2px 2px grey">shopping_basket</i></a>
+            <a href="{{url_for('todo')}}"><i class="material-icons" style="font-size:10vw; text-shadow:2px 2px grey">content_paste</i></a>
+                <a href="{{url_for('tips')}}"><i class="material-icons" style="font-size:10vw; text-shadow:2px 2px grey">lightbulb_outline</i></a>
+                 <a href="{{url_for('inspiration')}}"><i class="material-icons" style="font-size:10vw; text-shadow:2px 2px grey">color_lens</i></a>
       </div>
-   </div>
+    
+         </div>
+  
+      </div>
+  </div>
    <!--SECTION THREE-->
    <section>
       <div class="jumbotron parallaxthree">
