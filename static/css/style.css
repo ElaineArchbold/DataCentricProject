@@ -127,15 +127,33 @@ nav .brand-logo:hover {
 }
 
 .parallaxtwo {
-	min-height: 1200px;
-	background-color: #eaeaea;
+	background-image: url('/static/images/shopping.png');
+	min-height: 600px;
 	background-attachment: scroll;
 	background-size: cover;
 	background-position: 50% 50%;
-    padding-bottom:100px;
+	padding-bottom: 100px;
+}
+
+.shopping-list {
+	background-image: url('/static/images/shopping.png');
+	min-height: 1200px;
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 100px;
 }
 
 .parallaxtwo h2 {
+	font-family: 'Euphoria Script', cursive;
+	color: #e69a9a;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 4vw;
+}
+
+.shopping-list h2 {
 	font-family: 'Euphoria Script', cursive;
 	color: #605f5f;
 	text-align: center;
@@ -193,10 +211,9 @@ label {
 
 .shop-btn {
 	color: #434343;
-	border: 1px solid grey;
-	border-radius: 15px;
+	border-radius: 5px;
 	float: right;
-	background-color: #e8b3b3;
+	background-color: lightgray;
 }
 
 .shop-btn input {
@@ -415,17 +432,30 @@ html [type="button"],
 }
 
 .label-warning {
-    background-color: #fafafa;}
+	background-color: #fafafa;
+}
+
 
 /*----------------------------------------------------------------SHOPPING LIST*/
 
-.save-cb-state checkbox{
-    position: relative;
-    opacity: 0;
-    pointer-events: all;
-    border: 2px solid black;
+.save-cb-state checkbox {
+	position: relative;
+	opacity: 0;
+	pointer-events: all;
+	border: 2px solid black;
 }
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+{
+	border-bottom: none;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+
 /*----------------------------------------------------------------INSPIRATION PAGE*/
+
 .inspiration-page {
 	padding-bottom: 80px;
 	background-color: #fafafa;
@@ -498,9 +528,8 @@ footer {
 	z-index: 1;
 }
 
+
 /*----------------------------------------------------------------MEDIA QUERIES*/
-
-
 
 @media(min-width: 320px) and (max-width:991px) {
 	nav .brand-logo {
@@ -537,171 +566,163 @@ footer {
 }
 
 @media(min-width: 320px) and (max-width:991px) {
-	.parallaxone h2 {
-		font-size: 6vw;
+	.shopping-list {
+		background-image: none;
 	}
 }
 
 @media(min-width: 320px) and (max-width:991px) {
-	.parallaxone p {
-		font-size: 3.5vw;
-	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.parallaxtwo h2 {
+	.shopping-list h2 {
 		font-size: 10vw;
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.parallaxtwo {
-		padding-bottom: 80px;
+	@media(min-width: 320px) and (max-width:991px) {
+		.parallaxtwo {
+			max-height: 200px;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.parallaxthree h2 {
-		font-size: 10vw;
+	@media(min-width: 320px) and (max-width:991px) {
+		.parallaxone h2 {
+			font-size: 6vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.social-links li a i {
-		line-height: 30px;
-		width: 30px;
-		height: 30px;
-		padding: 0px;
-		border-radius: 50%;
-		font-size: 20px;
-		line-height: 30px;
+	@media(min-width: 320px) and (max-width:991px) {
+		.parallaxone p {
+			font-size: 3.5vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.footer-details {
-		padding-top: 2px;
-		padding-bottom: 2px;
+	@media(min-width: 320px) and (max-width:991px) {
+		.parallaxtwo h2 {
+			font-size: 10vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	footer {
-		line-height: 50px;
-		height: 50px;
+	@media(min-width: 320px) and (max-width:991px) {
+		.parallaxtwo {
+			padding-bottom: 80px;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	.col-md-7 {
-		max-width: 100%;
-		flex: auto;
+	@media(min-width: 320px) and (max-width:991px) {
+		.parallaxthree h2 {
+			font-size: 10vw;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	.parallaxone h2 {
-		font-size: 7vw;
+	@media(min-width: 320px) and (max-width:991px) {
+		.social-links li a i {
+			line-height: 30px;
+			width: 30px;
+			height: 30px;
+			padding: 0px;
+			border-radius: 50%;
+			font-size: 20px;
+			line-height: 30px;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.tagline {
-		font-family: 'Euphoria Script', cursive;
-		font-size: 5vw;
-		text-align: center;
-		padding-left: 0;
+	@media(min-width: 320px) and (max-width:991px) {
+		.footer-details {
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	.done_button {
-		width: 3rem;
-		font-size: 2vw;
+	@media(min-width: 320px) and (max-width:991px) {
+		footer {
+			line-height: 50px;
+			height: 50px;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	.done_button {
-		width: 3rem;
-		font-size: 1vw;
+	@media (min-width: 768px) and (max-width:991px) {
+		.col-md-7 {
+			max-width: 100%;
+			flex: auto;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	.edit_button {
-		width: 3rem;
-		font-size: 2vw;
+	@media (min-width: 768px) and (max-width:991px) {
+		.parallaxone h2 {
+			font-size: 7vw;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	.edit_button {
-		width: 3rem;
-		font-size: 1vw;
+	@media(min-width: 320px) and (max-width:991px) {
+		.tagline {
+			font-family: 'Euphoria Script', cursive;
+			font-size: 5vw;
+			text-align: center;
+			padding-left: 0;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	.task_header {
-		font-size: 3vw;
+	@media(min-width: 320px) and (max-width:767px) {
+		.done_button {
+			width: 3rem;
+			font-size: 2vw;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	.task_header {
-		font-size: 2vw;
+	@media (min-width: 768px) and (max-width:991px) {
+		.done_button {
+			width: 3rem;
+			font-size: 1vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	.switch label .lever {
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top: 7px;
-		margin-bottom: 7px;
+	@media(min-width: 320px) and (max-width:767px) {
+		.edit_button {
+			width: 3rem;
+			font-size: 2vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	.add-to-do-form {
-		margin: 10px;
+	@media (min-width: 768px) and (max-width:991px) {
+		.edit_button {
+			width: 3rem;
+			font-size: 1vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:991px) {
-	.edit-container {
-		min-height: auto;
-		margin-left: 20px;
-		margin-right: 20px;
-		width: auto;
-		padding-left: 30px;
-		padding-right: 30px;
-		background-color: #fafafa;
-        padding-bottom:80px
+	@media(min-width: 320px) and (max-width:767px) {
+		.task_header {
+			font-size: 3vw;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	input[type=text]:not(.browser-default) {
-		font-size: 4vw;
+	@media (min-width: 768px) and (max-width:991px) {
+		.task_header {
+			font-size: 2vw;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	input[type=text]:not(.browser-default) {
-		font-size: 2vw;
+	@media(min-width: 320px) and (max-width:767px) {
+		.switch label .lever {
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 7px;
+			margin-bottom: 7px;
+		}
 	}
-}
-
-@media(min-width: 320px) and (max-width:767px) {
-	.select-wrapper input.select-dropdown {
-		font-size: 4vw;
+	@media(min-width: 320px) and (max-width:767px) {
+		.add-to-do-form {
+			margin: 10px;
+		}
 	}
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-	.select-wrapper input.select-dropdown {
-		font-size: 2vw;
+	@media(min-width: 320px) and (max-width:991px) {
+		.edit-container {
+			min-height: auto;
+			margin-left: 20px;
+			margin-right: 20px;
+			width: auto;
+			padding-left: 30px;
+			padding-right: 30px;
+			background-color: #fafafa;
+			padding-bottom: 80px
+		}
 	}
-}
+	@media(min-width: 320px) and (max-width:767px) {
+		input[type=text]:not(.browser-default) {
+			font-size: 4vw;
+		}
+	}
+	@media (min-width: 768px) and (max-width:991px) {
+		input[type=text]:not(.browser-default) {
+			font-size: 2vw;
+		}
+	}
+	@media(min-width: 320px) and (max-width:767px) {
+		.select-wrapper input.select-dropdown {
+			font-size: 4vw;
+		}
+	}
+	@media (min-width: 768px) and (max-width:991px) {
+		.select-wrapper input.select-dropdown {
+			font-size: 2vw;
+		}
+	}

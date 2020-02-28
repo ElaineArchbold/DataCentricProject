@@ -76,12 +76,7 @@ def tips():
 
 @app.route('/shopping')
 def shopping():
-    return render_template('shopping.html')
-
-
-@app.route('/products')
-def products():
-    return render_template('products.html',
+    return render_template('shopping.html',
                            products=mongo.db.products.find())
 
 
@@ -94,8 +89,15 @@ def addproduct():
 @app.route('/updateproduct', methods=['POST'])
 def updateproduct():
     products = mongo.db.products
-    products.insert_one(request.form.to_dict())
-    return redirect(url_for('products'))
+    products.insert(request.form.to_dict())
+    return redirect(url_for('shopping'))
+
+
+@app.route('/editproduct/<product_id>')
+def editproduct(product_id):
+    product = mongo.db.products.find_one({"_id": ObjectId(product_id)})
+    return render_template('edittodo.html',
+                           product=product)
 
 
 @app.route('/update_product/<product_id>', methods=["POST"])
@@ -106,13 +108,13 @@ def update_product(product_id):
         'product_name': request.form.get('product_name'),
 
     })
-    return redirect(url_for('products'))
+    return redirect(url_for('shopping'))
 
 
-@app.route('/remove/<product_id>')
-def remove(product_id):
-    mongo.db.products.remove({'_id': ObjectId(product_id)})
-    return redirect(url_for('products'))
+@app.route('/remove')
+def remove():
+    mongo.db.products.remove()
+    return redirect(url_for('shopping'))
 
 
 @app.route('/inspiration')

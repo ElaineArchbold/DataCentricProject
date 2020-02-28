@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}   
 {% block content %}
-
-     
+<div class="container add-to-do-list-container">
+   <h3 class="headers">Add Product to List</h3>
+   <div class="row add-to-do-form">
+      <div class="row">
+      </div>
+      <form action="{{url_for('updateproduct')}}" method="POST" class="col s12">
          <div class="row">
-            <ul>
-          
-            </ul>
-         </div>
-  <form action="{{url_for('updateproduct')}}" method="POST" class="col s12">
- 
-         <div class="row">
-         <div class="col-md-6">
-               <input id="product_name" name="product_name" type="text">
-               <label for="product_name"> Add new product</label>
-            
-         </div>
-          
-         <div class="form-row text-center col-md-3">
-            <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
-            </button>
-         </div>
+            <div class="col-md-9">
+               <input id="product_name" name="product_name" type="text" placeholder="Add Product">
+            </div>
+            <div class="form-row text-center col-md-3">
+               <button class="btn waves-effect waves-light add-button" type="submit" name="action" style="text-align:center">Add to To List
+               </button>
+            </div>
          </div>
       </form>
-
+   </div>
+</div>
 {% endblock %}
-
