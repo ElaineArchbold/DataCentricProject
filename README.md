@@ -3,11 +3,11 @@
 For this project, I created a website around the book ‘Mrs Hinch, the Activity Journal’. ‘Mrs Hinch’ is Sophie Hinchliffe. She has a huge online following, particularly on Instagram and YouTube. She is ALL about cleaning! She shares cleaning tips and hacks with her followers, and has released a book, and now an Activity Journal where people can write down their to-do lists, shopping lists and cleaning tips or hacks. 
 
 ## UX
-My goal in the design was to create a very user friendly site where users could access everything to do with Mrs Hinch in one place. They can organise and update their lists all in one place.  
+My goal in the design was to create a very user friendly site where users could access everything to do with Mrs Hinch and to organise and update their lists all in one place.  
 
-I kept the Navbar and footer simple, and the colour theme is subtle. The images used for the lightbox on the inspiration page are from unsplash.com, but these could be replaced with professional photos of Mrs Hinch’s home(like what she has on Instagram or on the Facebook Group page).
+I kept the Navbar and footer simple, and the colour theme is subtle. The images used for the lightbox on the inspiration page are from unsplash.com, but these could be replaced with professional photos of Mrs Hinch’s home (like what she has on Instagram or on the Facebook Group page).
 
-*User A – wants to create their tailor made Mrs Hinch shopping list, and either print it to take the app shopping with them. On the home page, the middle section has icons for links, or they can select it from the navbar. The shopping list contains all of the Mrs Hinch must-have items. There are javascript functions written to save items or unsave them, as the user clicks on the checkbox. There is also a section to add to the list, which displays these items on the page and stores them in a MongoDB databse.
+*User A – wants to create their tailor made Mrs Hinch shopping list, and either print it or simply take the app shopping with them. On the home page, the middle section has icons for links, or they can select it from the navbar. The shopping list contains all of the Mrs Hinch must-have items. There are javascript functions written to save items or unsave them, as the user clicks on the checkbox. There is also a section to add to the list, which displays these items on the page and stores them in a MongoDB databse.
 
 *User B – wants to create and up-date an online to-do list. In the To-Do page, I have created a To-Do list, using MongoDB where the user can add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go.
 
@@ -31,7 +31,7 @@ The SHOPPING page has a list of all of the most popular Mrs Hinch must have item
 
 The TIPS page has a video gallery of the most popular Mrs Hinch YouTube videos. I have also created and wired up a search bar which brings users directly the Mrs Hinch YouTube channel. I used Google developer tools on YouTube to find the correct code for this.
 
-The INSPIRATION page contains images for interior design inspiration ideas. The images are divided into secions and there is a lightbos function added to improve the UX.
+The INSPIRATION page contains images for interior design inspiration ideas. The images are divided into sections and there is a lightbox function added to improve the UX.
 
 I used EmailJS on the contact page. When a user clicks on the email contact button in the footer, they are taken to an email contact page and the query is sent using EmailJS.
 
@@ -60,12 +60,13 @@ The navbar, footer and all buttons have hover states activated to change size/co
 12.	Jinja
 13.	Google Fonts
 14.	Font Awesome
+15. EmailJS
 
 
 ## Testing
-LINKS – I have tested all links. The Instagram, YouTube and Facebook links in the footer go the relevany acccounts. The email link goes to a general GMAIL link.
+LINKS – I have tested all links. The Instagram, YouTube and Facebook links in the footer go the relevant accounts. I have set up EmailJS for the email link in the footer.
 
-I used Google Developer Tools to check the responsiveness of the site. The Navbar and footer are responsive and reduce on smaller screens. I have used media queries throughout to allow for better UX on mobile devices.
+I used Google Developer Tools to check the responsiveness of the site. The navbar and footer are responsive and reduce on smaller screens. I have used media queries throughout to allow for better UX on mobile devices.
 
 The site had been tested on Chrome, Firefox and Safari.
 
@@ -114,16 +115,16 @@ All of the photos used are from unsplash.com.
 
 The YouTube videos on the Tips page are taken from the Mrs Hinch YouTube channel.
 
-I used Photoshop to create the background image for Parallax one. I replaced the background on an image I found of ‘Mrs Hinch’.
+I used Photoshop to create the background image for Parallax one. I replaced the background on an image I found of ‘Mrs Hinch’. I also used Photoshop to edit all background images.
 
 ### Acknowledgements
 The footer and navbar were taken and amended from previous projects.
 
 I found the scrolling parallax tutorial on: https://www.w3schools.com/howto/howto_css_parallax.asp
 
-I found the lightbox snippet on the Portfolio page on: https://epicbootstrap.com/snippets/lightbox-gallery
+I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.com/snippets/lightbox-gallery
 
-I found the snippet for the YouTube video gallery on: http://www.prebootstrap.com/bootstrap-template/video-gallery
+I found the snippet for the YouTube video gallery on the Tips page on: http://www.prebootstrap.com/bootstrap-template/video-gallery
 
 I found the javascript function for storing the shopping list on: http://www.marcorpsa.com/ee/t2641.html
 
