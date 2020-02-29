@@ -36,6 +36,8 @@ The TIPS page has a video gallery of the most popular Mrs Hinch YouTube videos. 
 
 The INSPIRATION page contains images for interior design inspiration ideas. The images are divided into secions and there is a lightbos function added to improve the UX.
 
+I used EmailJS on the contact page. When a user clicks on the email contact button in the footer, they are taken to an email contact page and the query is sent using EmailJS.
+
 I also created a favicon in Photoshop which can be seen on the browser tab and can further be used for social media branding.
 
 The navbar, footer and all buttons have hover states activated to change size/colour when the user hovers over them, to improve the UX.
