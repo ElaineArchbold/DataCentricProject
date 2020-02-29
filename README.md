@@ -18,10 +18,7 @@ I kept the Navbar and footer simple, and the colour theme is subtle. The images 
 The site can be viewed through Heroku: https://hinching-journal.herokuapp.com/home
 
 I created Wireframes of how I wanted the site to look before starting. See below:
-![Desktop View1](static/images/homepage.png)
-![Desktop View1](static/images/todolist.png)
-![Desktop View1](static/images/tips.png)
-![Desktop View1](static/images/inspiration.png)
+![Desktop View1](static/images/wireframes.png)
 
 
 ## Features
@@ -80,7 +77,7 @@ All HTML was formatted on https://freeformatter.com.
 
 Screenshots of the responsive design can be seen here:
 
-![Desktop View1](assets/images/responsive.png)
+![Desktop View1](static/images/responsive.png)
 
 
 ## Deployment
