@@ -93,24 +93,6 @@ def updateproduct():
     return redirect(url_for('shopping'))
 
 
-@app.route('/editproduct/<product_id>')
-def editproduct(product_id):
-    product = mongo.db.products.find_one({"_id": ObjectId(product_id)})
-    return render_template('edittodo.html',
-                           product=product)
-
-
-@app.route('/update_product/<product_id>', methods=["POST"])
-def update_product(product_id):
-    product = mongo.db.products
-    product.update({'_id': ObjectId(product_id)},
-                   {
-        'product_name': request.form.get('product_name'),
-
-    })
-    return redirect(url_for('shopping'))
-
-
 @app.route('/remove')
 def remove():
     mongo.db.products.remove()
@@ -120,6 +102,11 @@ def remove():
 @app.route('/inspiration')
 def inspiration():
     return render_template('inspiration.html')
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == '__main__':

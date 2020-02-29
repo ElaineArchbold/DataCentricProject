@@ -1,17 +1,19 @@
 ## Elaine Archbold Data Centric Milestone Project
 
-For this project, I created a website around the book ‘Mrs Hinch, the Activity Journal’. ‘Mrs Hinch’ is Sophie Hinchliffe. She has a huge online following, particularly on Instagram and YouTube. She is ALL about cleaning. She shares cleaning tips and hacks with her followers, and has released a book, and now an Activity Journal where people can write down their to-do lists, shopping lists and cleaning tips or hacks. 
+For this project, I created a website around the book ‘Mrs Hinch, the Activity Journal’. ‘Mrs Hinch’ is Sophie Hinchliffe. She has a huge online following, particularly on Instagram and YouTube. She is ALL about cleaning! She shares cleaning tips and hacks with her followers, and has released a book, and now an Activity Journal where people can write down their to-do lists, shopping lists and cleaning tips or hacks. 
 
 ## UX
-My goal in the design was to create a very user friendly site where users could access everything to do with Mrs Hinch in one place. 
+My goal in the design was to create a very user friendly site where users could access everything to do with Mrs Hinch in one place. They can organise and update their lists all in one place.  
 
-I kept the Navbar and footer simple, and the lightbox on the inspiration page gives an overall gallery view before an image is selected, which is when the lightbox effect kicks in. The images used are from unsplash.com, but these could be replaced with professional photos of Mrs Hinch’s home.
+I kept the Navbar and footer simple, and the colour theme is subtle. The images used for the lightbox on the inspiration page are from unsplash.com, but these could be replaced with professional photos of Mrs Hinch’s home(like what she has on Instagram or on the Facebook Group page).
 
-*User A – wants to create their tailor made Mrs Hinch shopping list, and either print it to take it shopping with them, or use the app while they are out and about. On the home page, as you scroll past the opening paragraph, there is a shopping list containing all of the Mrs Hinch must-have items. There are javascript functios written to save items or unsave them, as the user clicks on the checkbox. 
+*User A – wants to create their tailor made Mrs Hinch shopping list, and either print it to take the app shopping with them. On the home page, the middle section has icons for links, or they can select it from the navbar. The shopping list contains all of the Mrs Hinch must-have items. There are javascript functions written to save items or unsave them, as the user clicks on the checkbox. There is also a section to add to the list, which displays these items on the page and stores them in a MongoDB databse.
 
-*User B – wants to create and up-date an online cleaning to-do list. In the To-Do page, I have created a To-Do list, using MongoDB where the user can add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go.
+*User B – wants to create and up-date an online to-do list. In the To-Do page, I have created a To-Do list, using MongoDB where the user can add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go.
 
 *User C - wants to search for tips for cleaning. On the tips page, there are the most popular Mrs Hinch YouTube videos. I have also wired up a search bar to take users directly to her YouTube channel to search through her full collection of videos.
+
+*User D - wants to search for interior design inspiration. On the inspiration page, there are lightboxes divided into sections which would be kept updated and store the most popular interior design images. When an image is clicked, this triggers the light box to display the images in order.
 
 The site can be viewed through Heroku: https://hinching-journal.herokuapp.com/home
 
@@ -24,19 +26,24 @@ I created Wireframes of how I wanted the site to look before starting. See below
 
 ## Features
 ### Existing Features
-The HOME page features a scrolling parallax effect, with three sections. Section one is an introductory paragraph from Mrs Hinch, taken from her book introduction. Section two is a shopping list, where users can select the most popular Mrs Hinch items that they may need to stock up on. The users choices are saved until unchecked using javascript. Section three contains iframes for YouTube and Instagram. The Instagram feed could be added here, with login details from Mrs Hinch.
+The HOME page features a scrolling parallax effect, with three sections. Section one is an introductory paragraph from Mrs Hinch, taken (and modified for the project) from her book introduction. Section two is a banner with quicklinks to each of the pages on the site. Section three contains iframes for YouTube and Instagram. The Instagram feed could be added here, with login details from Mrs Hinch.
 
 The TO-DO page uses a MongoDB database to allow the user to add, edit, update and remove items from their to-do list. They can use this list directly on the website and edit it as they go. 
 
+The SHOPPING page has a list of all of the most popular Mrs Hinch must have items, which are stored for the user once clicked using javascript. There is also a section at the end of the page where users can add to the list, storing the added items in a MongoDB database. There is a print button on the page should the user need to print the list.
+
 The TIPS page has a video gallery of the most popular Mrs Hinch YouTube videos. I have also created and wired up a search bar which brings users directly the Mrs Hinch YouTube channel. I used Google developer tools on YouTube to find the correct code for this.
+
+The INSPIRATION page contains images for interior design inspiration ideas. The images are divided into secions and there is a lightbos function added to improve the UX.
 
 I also created a favicon in Photoshop which can be seen on the browser tab and can further be used for social media branding.
 
 The navbar, footer and all buttons have hover states activated to change size/colour when the user hovers over them, to improve the UX.
 
 ### Features Left to Implement
-1. This site is specific to each user, so would need users to login to access their own to-do database and shopping list.
+1. This site is specific to each user, so would need users to login to access their own to-do database and shopping list. A user login function would need to be added.
 2. With the Mrs Hinch login details for Instagram, I would be able to replace the Instagram iframe on the home page with her Instagram feed.
+3. The images on the inspiration page would need to be replaced with 'official' Mrs Hinch images.
 
 
 ## Technologies Used
@@ -56,15 +63,12 @@ The navbar, footer and all buttons have hover states activated to change size/co
 14.	Font Awesome
 
 
-
 ## Testing
-LINKS – I have tested all links. The email and Facebook links in the footer go those platform homepages. All other links go to the relevant accounts.
+LINKS – I have tested all links. The Instagram, YouTube and Facebook links in the footer go the relevany acccounts. The email link goes to a general GMAIL link.
 
 I used Google Developer Tools to check the responsiveness of the site. The Navbar and footer are responsive and reduce on smaller screens. I have used media queries throughout to allow for better UX on mobile devices.
 
 The site had been tested on Chrome, Firefox and Safari.
-
-I used the Heroku link to check the site on my phone, where I discovered some discrepancies between what was shown in developer tools and what was actually showing on the live site. This allowed me to fix these issues to ensure that the live site would look how it should.
 
 All HTML was checked on the W3C Mark-up Validation Service.
 
@@ -108,6 +112,8 @@ The text in the 'about me' section on the home page was taken from the introduct
 
 ### Media
 All of the photos used are from unsplash.com.
+
+The YouTube videos on the Tips page are taken from the Mrs Hinch YouTube channel.
 
 I used Photoshop to create the background image for Parallax one. I replaced the background on an image I found of ‘Mrs Hinch’.
 
