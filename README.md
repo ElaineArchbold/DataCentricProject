@@ -80,7 +80,7 @@ All HTML was formatted on https://freeformatter.com.
 
 Screenshots of the responsive design can be seen here:
 
-![Desktop View1](assets/images/responsivedesign.jpg)
+![Desktop View1](assets/images/responsive.png)
 
 
 ## Deployment

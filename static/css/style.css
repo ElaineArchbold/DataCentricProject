@@ -127,7 +127,7 @@ nav .brand-logo:hover {
 }
 
 .parallaxtwo {
-	background-color:#D3D3D3;
+	background-color: #D3D3D3;
 	background-attachment: scroll;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -198,6 +198,8 @@ nav .brand-logo:hover {
 	color: #e8b3b3;
 	text-decoration: none;
 }
+
+
 /*---------PARALLAX*/
 
 label {
@@ -526,73 +528,72 @@ footer {
 
 
 /*----------------------------------------------------------------CONTACT FORM*/
+
 .form-page {
-   background-image: url('/static/images/contact.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    min-height: 1200px;
+	background-image: url('/static/images/contact.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	min-height: 1200px;
 }
 
 .main-form .col-12 {
-    padding-left: 0;
-    padding-right: 9px;
-    background-color: #fafafa;
+	padding-left: 0;
+	padding-right: 9px;
+	background-color: #fafafa;
 }
 
 .main-form h2 {
-    color: #353436;
-    font-family: 'Euphoria Script', cursive;
-    text-align: center;
-    font-weight: bolder;
-    padding-top: 60px;
+	color: #353436;
+	font-family: 'Euphoria Script', cursive;
+	text-align: center;
+	padding-top: 60px;
 }
 
 .main-form h5 {
-    color: #434343;
-    text-align: center;
+	color: #434343;
+	text-align: center;
 }
 
-
 .main-form button[type=submit] {
-   	background-color: #e8b3b3!important;
+	background-color: #e8b3b3!important;
 	border: 1px solid #fafafa;
 	color: #444343;
 	width: 10rem;
-    text-transform: none;
+	text-transform: none;
 }
 
 .main-form button[type=submit]:hover {
-    color: #e8b3b3;
-    background-color: #fafafa;
-    border: 1px solid #e8b3b3;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+	color: #e8b3b3;
+	background-color: #fafafa!important;
+	border: 1px solid #e8b3b3;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
 }
 
 .main-form .form-control {
-    font-size: 16px;
-    font-weight: 100;
-    margin: 10px;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 10px;
 }
 
 .main-form .form-text {
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 28px;
-    border: 1px solid #e8b3b3;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 28px;
+	border: 1px solid #e8b3b3;
 }
 
 .main-form {
-    padding: 60px;
-    padding-top: 100px;
-    border-radius: 5px;
-
+	padding: 60px;
+	padding-top: 100px;
+	border-radius: 5px;
 }
+
 
 /*----------------------------------------------------------------MEDIA QUERIES*/
 
@@ -620,7 +621,7 @@ footer {
 
 @media (min-width: 768px) and (max-width:991px) {
 	.nav-link {
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 }
 
@@ -660,7 +661,6 @@ footer {
 			font-size: 10vw;
 		}
 	}
-
 	@media(min-width: 320px) and (max-width:991px) {
 		.parallaxthree h2 {
 			font-size: 10vw;
@@ -785,5 +785,17 @@ footer {
 	@media (min-width: 768px) and (max-width:991px) {
 		.select-wrapper input.select-dropdown {
 			font-size: 2vw;
+		}
+	}
+	@media(min-width: 320px) and (max-width:767px) {
+		.form-page {
+			background-color: #fafafa;
+			padding-bottom: 50px;
+			min-height: 600px;
+		}
+	}
+	@media(min-width: 320px) and (max-width:767px) {
+		.main-form {
+			padding: 0px;
 		}
 	}
